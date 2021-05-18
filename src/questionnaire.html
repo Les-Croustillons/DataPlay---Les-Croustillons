@@ -20,7 +20,7 @@
 				<!-- Twitter summary card with large image must be at least 280x150px -->
 	<meta name="twitter:image" content="https://francois-szczepkowski.be/projets/">
 					<!-- Open Graph data -->
-	<meta property ="og:site_name" content=" / DATA PLAY"/>
+	<meta property ="og:site_name" content="/DATA PLAY"/>
 	<meta property ="og:title" content="RUX - "/>
 	<meta property ="og:description" content="Accueil -  - DATA PLAY - DWM"/>
 	<meta property ="og:type" content="website"/>
@@ -32,13 +32,213 @@
 	<link rel="icon" href="assets/images/"/>
 </head>
 <body>
-	<header>
-
+	<header class="header">
+		<ul class="headerList">
+			<li class="headerListe__el"><h1 class="logo logo--filaire">Geeky</h1></li>
+			<li class="headerListe__el"><a href="questionnaire.html">Fermer</a></li>
+			<li class="headerListe__el headerListe__el--hidden"><a href="questionnaire.html">Recommencer</a></li>
+		</ul>
+		
 	</header>
-	<main>
-		<h1>Gulp Starter Data Play Questionnaire</h1>
+	
+	<div class="fil"></div>
+
+	<main class="main">
+		<section class="question question--1">
+			<h2 class="question">L'histoire est importante pour toi, peu importe le gameplay.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--1" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">1/12</p>
+		</section>
+		<section class="question question--2 question--hidden">
+			<h2 class="question">Tu aimes explorer de belles et vastes régions.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--2" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">2/12</p>
+		</section>
+		<section class="question question--3 question--hidden">
+			<h2 class="question">Dégommer des cibles te défoule dans un jeu.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--3" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">3/12</p>
+		</section>
+		<section class="question question--4 question--hidden">
+			<h2 class="question">Tu aimes collaborer avec des coéquipiers.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--4" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">4/12</p>
+		</section>
+		<section class="question question--5 question--hidden">
+			<h2 class="question">Découvrir de nouvelles aventures, de nouveaux mondes te passionne.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--5" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">5/12</p>
+		</section>
+		<section class="question question--6 question--hidden">
+			<h2 class="question">Lorsque tu commences un jeu, tu le fini à 100%.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--6" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">6/12</p>
+		</section>
+		<section class="question question--7 question--hidden">
+			<h2 class="question">Je joue pour la baston.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--7" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">7/12</p>
+		</section>
+		<section class="question question--8 question--hidden">
+			<h2 class="question">Tu aimes te creuser les méninges. La stratégie, ça te connait.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--8" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">8/12</p>
+		</section>
+		<section class="question question--9 question--hidden">
+			<h2 class="question">Tu aimes partager/échanger avec les autres en jeu.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--9" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">9/12</p>
+		</section>
+		<section class="question question--10 question--hidden">
+			<h2 class="question">Tu aimes chercher, découvrir tous les secrets et clins d'oeil cachés par les développeurs.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--10" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">10/12</p>
+		</section>
+		<section class="question question--11 question--hidden">
+			<h2 class="question">Ton but en jeu est de gagner, tu vises absolument la première place.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--11" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">11/12</p>
+		</section>
+		<section class="question question--12 question--hidden">
+			<h2 class="question">En général, tu préfères avoir une arme en main.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--12" type="range" value="50" min="0" max="100">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<p class="nbrQuestion">12/12</p>
+		</section>
+		<section class="question question--fin question--hidden">
+			<h2 class="question">Es-tu sûr de tes réponses ? Le reste de ta vie en dépend !</h2>
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--terminer">Terminer</button></li>
+			</ul>
+		</section>
+
+		<section class="resultat">
+			<!-- ajouter les graphiques des résultats -->
+			<h2 class="titre"></h2>
+			<div class="description"></div>
+			<h3 class="titre titre--moyen">Catégories conseillées</h3>
+			<div class="categories"></div>
+			<h3 class="titre titre--moyen">Jeux conseillés</h3>
+			<h4 class="titre titre--petit">Sur ordinateur</h4>
+			<!-- ajouter jeux (grille ?) -->
+			<h4 class="titre titre--petit">Sur console</h4>
+			<!-- ajouter jeux (grille ?) -->
+			<h4 class="titre titre--petit">Sur mobile</h4>
+			<!-- ajouter jeux (grille ?) -->
+
+			<!-- comment on s'y prend pour le "partager" ? -->
+		</section>
 	</main>
-	<footer>
+	
+	<footer class="footer">
 
 	</footer>
 </body>
