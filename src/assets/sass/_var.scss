@@ -1,0 +1,55 @@
+/*
+ * VARIABLES
+** =============================================================== */
+
+/* Color and DarkTheme */
+:root{
+	--color-primary: ;
+	--color-primary-variant: ;
+	--color-secondary: ;
+	--color-secondary-variant: ;
+	--color-background: ;
+	--color-surface: ;
+	--color-error: ;
+	--color-on-primary: ;
+	--color-on-secondary: ;
+	--color-on-background: ;
+	--color-on-surface: ;
+	--color-on-error: ;
+	--color-on-primary-hover: ;
+}
+[data-theme="light"]{
+	--color-primary: ;
+	--color-primary-variant: ;
+	--color-secondary: ;
+	--color-secondary-variant: ;
+	--color-background: ;
+	--color-surface: ;
+	--color-error: ;
+	--color-on-primary: ;
+	--color-on-secondary: ;
+	--color-on-background: ;
+	--color-on-surface: ;
+	--color-on-error: ;
+	--color-on-primary-hover: ;   
+}
+
+[data-theme="dark"]{
+	--color-primary: ;
+	--color-primary-variant: ;
+	--color-secondary: ;
+	--color-secondary-variant: ;
+	--color-background: ;
+	--color-surface: ;
+	--color-error: ;
+	--color-on-primary: ;
+	--color-on-secondary: ;
+	--color-on-background: ;
+	--color-on-surface: ;
+	--color-on-error: ;
+	--color-on-primary-hover: ;
+}
+
+/* Type */
+$font-text:  'Roboto', sans-serif;
+$font-title: 'Lora', serif;
