@@ -1,3 +1,8 @@
+# Git import
+```
+git clone https://github.com/Les-Croustillons/DataPlay---Les-Croustillons.git 
+
+```
 # Git push
 ```
 git add .
