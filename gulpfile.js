@@ -39,8 +39,10 @@ const javascript = () => {
 }
 
 const json = () => {
-	return gulp.src('.src/assets/**/*.json')
-		.pipe(gulp.dest('./dist/assets/json/'));
+	return gulp.src('./src/assets/json/**/*.json')
+		.pipe(sourcemaps.write('./'))
+		.pipe(gulp.dest('./dist/assets/json/'))
+		.pipe(browserSyncServer.stream());
 }
 
 const html = () => {
@@ -51,7 +53,7 @@ const html = () => {
 const watchFiles = () => {
 	gulp.watch("./src/assets/sass/**/*.scss", styles);
 	gulp.watch("./src/assets/js/**/*.js", javascript);
-	gulp.watch("./src/assets/**/*.json", json);
+	gulp.watch("./src/assets/json/**/*.json", json);
 	gulp.watch([
 		"./src/assets/images/**/*.jpg",
 		"./src/assets/images/**/*.png",
