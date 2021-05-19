@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projet DATA PLAY</title>
+	<title>Geeky - Projet DATA PLAY</title>
 	<link href="assets/css/main.css" rel="stylesheet" >
 	<script src="assets/js/main.min.js" defer></script>
 
@@ -29,19 +29,58 @@
 	<meta property ="og:image:width" content="1800">
 	<meta property ="og:image:height" content="945">
 			
+	<link rel="stylesheet" href="assets/sass/main.scss">
 	<link rel="icon" href="assets/images/"/>
 </head>
 <body>
-	<header>
-
+	<!-- classes au header, main, footer ? -->
+	<header class="header">
+		<h1 class="logo">Geeky</h1>
 	</header>
-	<main>
-		<h1>Geeky</h1>
-		<h2>Quel genre de gamer es-tu?</h2>
-		<p>It's sadicoman !</p>
-	</main>
-	<footer>
 
+	<main class="main">
+		<h2 class="titre">Quel genre de gamer es-tu?</h2>
+		<p>Es-tu plutôt un aventurier ? Un mercenaire ?</p>
+		<p>Pour le savoir, viens faire le test maintenant !</p>
+		<a class="btn" href="questionnaire.html">Start</a>
+		<div class="illu"></div>
+
+		<!-- en grille ? -->
+		<div class="etoile"></div>
+		<p>Grâce à ce questionnaire, tu pourras confirmer ou non ton status de rageux professionnel ou trouver enfin des jeux qui te conviennent.</p>
+		<div class="champignon"></div>
+		<p><span class="caps">Geeky</span> est un site réalisé lors de l'atelier DataPlay lors de nos études en Design Web et Mobile de la Haute École Albert Jacquard.</p>
+
+		<h3 class="titre titre--grand">La team</h3>
+		
+		<!-- ajouter les textes de profils -->
+
+		<div class="picto picto--nathalie"></div>
+		<h4 class="titre titre--moyen">Nathalie</h4>
+		<p>texte Nathalie</p>
+
+		<div class="picto picto--aurelie"></div>
+		<h4 class="titre titre--moyen">Aurélie</h4>
+		<p>texte Aurélie</p>
+
+		<div class="picto picto--francois"></div>
+		<h4 class="titre titre--moyen">François</h4>
+		<p>texte François</p>
+
+		<div class="picto picto--cedric"></div>
+		<h4 class="titre titre--moyen">Cédric</h4>
+		<p>texte Cédric</p>
+	</main>
+
+	<div class="flecheDroite"></div>
+	
+	<footer class="footer">
+		<ul class="footerListe">
+			<!-- quel lien pour le heaj ? -->
+			<li class="footerListe__el"><a href="#">HEAJ</a></li>
+			<li class="footerListe__el">&copy;2021</li>
+			<li class="footerListe__el footer__el--dwm"><a href="http://dwm.re/">DWM</a></li>
+		</ul>
 	</footer>
 </body>
 </html>

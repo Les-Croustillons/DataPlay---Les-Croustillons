@@ -20,7 +20,7 @@
 				<!-- Twitter summary card with large image must be at least 280x150px -->
 	<meta name="twitter:image" content="https://francois-szczepkowski.be/projets/">
 					<!-- Open Graph data -->
-	<meta property ="og:site_name" content=" / DATA PLAY"/>
+	<meta property ="og:site_name" content="/DATA PLAY"/>
 	<meta property ="og:title" content="RUX - "/>
 	<meta property ="og:description" content="Accueil -  - DATA PLAY - DWM"/>
 	<meta property ="og:type" content="website"/>
@@ -29,17 +29,226 @@
 	<meta property ="og:image:width" content="1800">
 	<meta property ="og:image:height" content="945">
 			
+	<link rel="stylesheet" href="assets/sass/main.scss">
+	<script src="assets/js/main.js" defer></script>
 	<link rel="icon" href="assets/images/"/>
 </head>
 <body>
-	<header>
-
+	<header class="header">
+		<ul class="headerList">
+			<li class="headerListe__el"><h1 class="logo logo--filaire">Geeky</h1></li>
+			<li class="headerListe__el headerListe__el--fermer"><a href="index.html">Fermer</a></li>
+			<li class="headerListe__el headerListe__el--recommencer headerListe__el--hidden"><a href="questionnaire.html">Recommencer</a></li>
+		</ul>
+		
 	</header>
-	<main>
-		<h1>Gulp Starter Data Play Questionnaire</h1>
-	</main>
-	<footer>
+	
+	<div class="fil"></div>
 
+	<main class="main">
+		<section class="section section--q1">
+			<h2 class="question">L'histoire est importante pour toi, peu importe le gameplay.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q1" type="range" value="50" min="0" max="100" data-profile="coequipier">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">1/12</div>
+		</section>
+		<section class="section section--q2 section--hidden">
+			<h2 class="question">Tu aimes explorer de belles et vastes régions.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q2" type="range" value="50" min="0" max="100" data-profile="aventurier">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">2/12</div>
+		</section>
+		<section class="section section--q3 section--hidden">
+			<h2 class="question">Dégommer des cibles te défoule dans un jeu.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q3" type="range" value="50" min="0" max="100" data-profile="tueur">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">3/12</div>
+		</section>
+		<section class="section section--q4 section--hidden">
+			<h2 class="question">Tu aimes collaborer avec des coéquipiers.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q4" type="range" value="50" min="0" max="100" data-profile="coequipier">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">4/12</div>
+		</section>
+		<section class="section section--q5 section--hidden">
+			<h2 class="question">Découvrir de nouvelles aventures, de nouveaux mondes te passionne.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q5" type="range" value="50" min="0" max="100" data-profile="aventurier">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">5/12</div>
+		</section>
+		<section class="section section--q6 section--hidden">
+			<h2 class="question">Lorsque tu commences un jeu, tu le fini à 100%.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q6" type="range" value="50" min="0" max="100" data-profile="performeur">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">6/12</div>
+		</section>
+		<section class="section section--q7 section--hidden">
+			<h2 class="question">Je joue pour la baston.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q7" type="range" value="50" min="0" max="100" data-profile="tueur">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">7/12</div>
+		</section>
+		<section class="section section--q8 section--hidden">
+			<h2 class="question">Tu aimes te creuser les méninges. La stratégie, ça te connait.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q8" type="range" value="50" min="0" max="100" data-profile="performeur">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">8/12</div>
+		</section>
+		<section class="section section--q9 section--hidden">
+			<h2 class="question">Tu aimes partager/échanger avec les autres en jeu.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q9" type="range" value="50" min="0" max="100" data-profile="coequipier">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">9/12</div>
+		</section>
+		<section class="section section--q10 section--hidden">
+			<h2 class="question">Tu aimes chercher, découvrir tous les secrets et clins d'oeil cachés par les développeurs.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q10" type="range" value="50" min="0" max="100" data-profile="aventurier">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">10/12</div>
+		</section>
+		<section class="section section--q11 section--hidden">
+			<h2 class="question">Ton but en jeu est de gagner, tu vises absolument la première place.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q11" type="range" value="50" min="0" max="100" data-profile="performeur">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">11/12</div>
+		</section>
+		<section class="section section--q12 section--hidden">
+			<h2 class="question">En général, tu préfères avoir une arme en main.</h2>
+			<ul class="frequenceListe">
+				<li class="frequenceListe__el">Jamais</li>
+				<li class="frequenceListe__el">Parfois</li>
+				<li class="frequenceListe__el">Toujours</li>
+			</ul>
+			<input class="input input--q12" type="range" value="50" min="0" max="100" data-profile="tueur">
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--suivant">Suivant</button></li>
+			</ul>
+			<div class="nbrQuestion">12/12</div>
+		</section>
+		<section class="section section--fin section--hidden">
+			<h2 class="question">Es-tu sûr de tes réponses ? Le reste de ta vie en dépend !</h2>
+			<ul class="btnListe">
+				<li><button class="btnListe__el btnListe__el--retour">Retour</button></li>
+				<li><button class="btnListe__el btnListe__el--terminer">Terminer</button></li>
+			</ul>
+		</section>
+
+		<section class="section section--resultat section--hidden">
+			<!-- ajouter les graphiques des résultats -->
+			<h2 class="titre">profil</h2>
+			<div class="description">description profil</div>
+			<h3 class="titre titre--moyen">Catégories conseillées</h3>
+			<div class="categories">catégories</div>
+			<h3 class="titre titre--moyen">Jeux conseillés</h3>
+			<h4 class="titre titre--petit">Sur ordinateur</h4>
+			
+			<div class="jeux jeux--pc"></div>
+			<h4 class="titre titre--petit">Sur console</h4>
+			
+			<div class="jeux jeux--console"></div>
+			<h4 class="titre titre--petit">Sur mobile</h4>
+			
+			<div class="jeux jeux--mobile"></div>
+			
+			<!-- comment on s'y prend pour le "partager" ? -->
+		</section>
+	</main>
+	
+	<footer class="footer">
+		<ul class="footerListe">
+			<!-- quel lien pour le heaj ? -->
+			<li class="footerListe__el"><a href="#">HEAJ</a></li>
+			<li class="footerListe__el">&copy;2021</li>
+			<li class="footerListe__el footer__el--dwm"><a href="http://dwm.re/">DWM</a></li>
+		</ul>
 	</footer>
 </body>
 </html>
