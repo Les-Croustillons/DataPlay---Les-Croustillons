@@ -5,7 +5,7 @@ git clone https://github.com/Les-Croustillons/DataPlay---Les-Croustillons.git
 ```
 # Git branch
 ```
-git checkout [brNathalie]
+git checkout brNathalie
 git branch
 git merge main
 git status
@@ -18,7 +18,7 @@ git commit -m "first commit"
 git branch -M main
 git push -u origin main
 git push origin main
-git push origin [brNathalie]
+git push origin brNathalie
 ```
 # Gulp starter
 
