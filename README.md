@@ -1,9 +1,24 @@
+# Git import
+```
+git clone https://github.com/Les-Croustillons/DataPlay---Les-Croustillons.git 
+
+```
+# Git branch
+```
+git checkout brNathalie
+git branch
+git merge main
+git status
+
+```
 # Git push
 ```
 git add .
 git commit -m "first commit"
 git branch -M main
 git push -u origin main
+git push origin main
+git push origin brNathalie
 ```
 # Gulp starter
 
