@@ -6,3 +6,19 @@
 .btn--hidden, .headerListe__el--hidden{
     display: none;
 }
+.input{
+    width: 400px;
+}
+.frequenceListe, .btnListe{
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-between;
+    padding: 0;
+}
+.btnListe{
+    justify-content: center;
+    &__el{
+        margin: 0 10px;
+    }
+}

@@ -1,14 +1,14 @@
 'use strict';
 
 let sections = document.querySelectorAll('.section');
-let btnsRetour = document.querySelectorAll('.btnListe__el--retour');
-let btnsSuivant = document.querySelectorAll('.btnListe__el--suivant');
+let btnsRetour = document.querySelectorAll('.btnRetour');
+let btnsSuivant = document.querySelectorAll('.btnSuivant');
 
 let inputs = document.querySelectorAll('.input');
 
 let btnFermer = document.querySelector('.headerListe__el--fermer');
 let btnRecommencer = document.querySelector('.headerListe__el--recommencer');
-let btnTerminer = document.querySelector('.btnListe__el--terminer');
+let btnTerminer = document.querySelector('.btnTerminer');
 
 let nSection = 0;
 let nSectionSuivant = nSection + 1;
@@ -62,68 +62,142 @@ for(let btnRetour of btnsRetour){
 function wichProfile(p, a, c, t){
     let prof = "";
 
-    if(   p == c &&  //tout > 35 && tout < 65 
+    if(   p == c &&  //tout > 40 && tout < 65 
                 p == a &&
                 p == t &&
-                p > 35 &&
+                p > 40 &&
                 p < 65){
-        prof = "L'indécis";
-    }else if(   p == c &&  //tout <= 35
-                p == a &&
+        prof = "l'indécis";
+    }else if(   p <= 40 &&  //tout <= 40
+                a <= 40 &&
+                c <= 40 &&
+                t <= 40){
+        prof = "le faux gamer";
+    }else if(   p >= 80 &&  //tout >= 80
+                a >= 80 &&
+                c >= 80 &&
+                t >= 80){
+        prof = "le polyvalent";
+    }else if(   a == c &&  //performeur -
+                a == t &&
+                p < a){
+        prof = "le mercenaire";
+    }else if(   p == c &&  //aventurier -
                 p == t &&
-                p <= 35){
-        prof = "Le faux gamer";
-    }else if(   p == c &&  //tout >= 65
-                p == a &&
-                p == t &&
-                p >= 65){
-        prof = "Le polyvalent";
-    }else if(   p > c &&  //performeur + aventurier
+                a < p){
+        prof = "le leader";
+    }else if(   a == p &&  //coequipier -
+                a == t &&
+                c < a){
+        prof = "le traqueur";
+    }else if(   a == c &&  //tueur -
+                a == p &&
+                t < a){
+        prof = "le rôliste";
+    }else if(   p > a &&  //performeur (seul p > 40)
+                p > c &&
                 p > t &&
+                p > 40 &&
+                a <= 40 &&
+                c <= 40 &&
+                t <= 40){
+        prof = "le performeur";
+    }else if(   a > p &&  //aventurier (seul a > 40)
                 a > c &&
-                a > t){
-        prof = "Le stratège";
-    }else if(   p > a &&  //performeur + coequipier
-                p > t &&
-                c > a &&
-                c > t){
-        prof = "Le leader";
-    }else if(   p > c &&  //performeur + tueur
-                p > a &&
-                t > c &&
-                t > a){
-        prof = "Le traqueur";
-    }else if(   c > p &&  //aventurier + coequipier
+                a > t &&
+                a > 40 &&
+                p <= 40 &&
+                c <= 40 &&
+                t <= 40){
+        prof = "l'aventurier";
+    }else if(   c > a &&  //coequipier (seul c > 40)
+                c > p &&
                 c > t &&
-                a > p &&
-                a > t){
-        prof = "Le rôliste";
-    }else if(   t > c &&  //aventurier + tueur
+                c > 40 &&
+                a <= 40 &&
+                p <= 40 &&
+                t <= 40){
+        prof = "le coéquipier";
+    }else if(   t > a &&  //tueur (seul t > 40)
+                t > c &&
                 t > p &&
-                a > c &&
-                a > p){
-        prof = "Le mercenaire";
-    }else if(   c > p &&  //coequipier + tueur
-                c > a &&
-                t > p &&
-                t > a){
-        prof = "Le boss";
-    }else if(   p > a &&  //performeur
+                t > 40 &&
+                a <= 40 &&
+                c <= 40 &&
+                p <= 40){
+        prof = "le tueur"; 
+    }else if(   p > a && //performeur
                 p > c &&
                 p > t){
-        prof = "Le performeur";
-    }else if(   a > p &&  //aventurier
+        if(         a > c &&
+                    a > t &&
+                    a > (p - 20)){
+            prof = "le stratège"    //performeur + aventurier
+        }else if(   c > a &&
+                    c > t &&
+                    c > (p - 20)){
+            prof = "le leader"      //performeur + coequipier
+        }else if(   t > a &&
+                    t > c &&
+                    t > (p - 20)){
+            prof = "le traqueur"    //performeur + tueur
+        }else{
+            prof = "le performeur"; //performeur
+        }
+    }else if(   a > p && //aventurier
                 a > c &&
                 a > t){
-        prof = "L'aventurier";
-    }else if(   c > a &&  //coequipier
+        if(         p > c &&
+                    p > t &&
+                    p > (a - 20)){
+            prof = "le stratège"    //aventurier + performeur
+        }else if(   c > p &&
+                    c > t &&
+                    c > (a - 20)){
+            prof = "le rôliste"     //aventurier + coequipier
+        }else if(   t > p &&
+                    t > c &&
+                    t > (a - 20)){
+            prof = "le mercenaire"  //aventurier + tueur
+        }else{
+            prof = "l'aventurier"; //aventurier
+        }
+    }else if(   c > a && //coequipier
                 c > p &&
                 c > t){
-        prof = "Le coéquipier";
-    }else if(   t > p &&  //tueur
+        if(         a > p &&
+                    a > t &&
+                    a > (c - 20)){
+            prof = "le rôliste"    //coequipier + aventurier
+        }else if(   p > a &&
+                    p > t &&
+                    p > (c - 20)){
+            prof = "le leader"      //coequipier + performeur
+        }else if(   t > a &&
+                    t > p &&
+                    t > (c - 20)){
+            prof = "le boss"    //coequipier + tueur
+        }else{
+            prof = "le coéquipier"; //coequipier
+        }
+    }else if(   t > a && //tueur
                 t > c &&
-                t > a){
-        prof = "Le tueur";
+                t > p){
+        if(         a > c &&
+                    a > p &&
+                    a > (t - 20)){
+            prof = "le mercenaire"    //tueur + aventurier
+        }else if(   c > a &&
+                    c > p &&
+                    c > (t - 20)){
+            prof = "le boss"      //tueur + coequipier
+        }else if(   p > a &&
+                    p > c &&
+                    p > (t - 20)){
+            prof = "le traqueur"    //tueur + performeur
+        }else{
+            prof = "le tueur"; //tueur
+        }
     }
 
     return prof;
@@ -150,18 +224,18 @@ btnTerminer.addEventListener('click', (e) =>{
     console.log('tueur : ' + mTueur);
 
     profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
-    console.log(profile);
-
-    fetch('assets/json/donnees.json')
-    .then((response) =>{
-        return response.json();
-    })
-    .then((database) =>{
-
-        console.log(database);
-
-    })
-    .catch((response) =>{
-    console.log('data non trouvée => ' + response);
-    });
+    console.log('RESULTAT : tu es ' + profile);
+    
 });
+
+// pour tester rapidement :
+// let p = prompt('performeur');
+// console.log('performeur : ' + p);
+// let a = prompt('aventurier');
+// console.log('aventurier : ' + a);
+// let c = prompt('coequipier');
+// console.log('coequipier : ' + c);
+// let t = prompt('tueur');
+// console.log('tueur : ' + t);
+// profile = wichProfile(p, a, c, t);
+// console.log(profile);
