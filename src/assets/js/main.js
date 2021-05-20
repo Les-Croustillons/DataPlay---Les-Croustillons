@@ -224,23 +224,11 @@ btnTerminer.addEventListener('click', (e) =>{
     console.log('tueur : ' + mTueur);
 
     profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
-    // profile = wichProfile(p, a, c, t);
     console.log(profile);
 
-    fetch('assets/json/donnees.json')
-    .then((response) =>{
-        return response.json();
-    })
-    .then((database) =>{
-
-        console.log(database);
-
-    })
-    .catch((response) =>{
-    console.log('data non trouvée => ' + response);
-    });
 });
 
+// pour tester rapidement :
 // let p = prompt('performeur');
 // console.log('performeur : ' + p);
 // let a = prompt('aventurier');
