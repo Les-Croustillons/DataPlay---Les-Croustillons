@@ -231,7 +231,8 @@ btnTerminer.addEventListener('click', (e) =>{
         return response.json();
     })
     .then((database) =>{
-        console.log(database[0].performeur.description);
+        // console.log(database[0].performeur.description);
+        console.log(database);
         
     })
     .catch((response) =>{
