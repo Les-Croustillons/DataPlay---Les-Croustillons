@@ -1,2 +1,94 @@
 @import 'var';
 
+.section--hidden{
+    display: none;
+}
+.btn--hidden, .headerListe__el--hidden{
+    display: none;
+}
+
+
+.titre{
+    font-family: $font--title;
+    font-size:$size--second;
+    width:80%;
+    line-height:105px;
+}
+
+
+.text--indent{
+ overflow-x: hidden;
+ text-indent: -1999px;   
+ display:none;
+}
+
+.titre--grand{
+    line-height:$size--second;
+    font-size:$size--third;
+}
+
+.titre--moyen{
+    line-height:$size--third;
+    font-size:$size--fourth;
+}
+
+.body{
+    font-size:$size--paragraph;
+    font-family:$font--paragraph;
+    line-height:$size--fourth;
+    color:$color--text;
+    background: linear-gradient(-45deg, #191919, #1A2F36, #261C36, #361936);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    margin:25px auto;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo{
+    height:70px;
+    width:70px;
+}
+
+.picto{
+    width:300px;
+    height:300px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.picto--nathalie{
+    background-image: url('../images/nuage.svg');
+}
+
+.picto--aurelie{
+    background-image: url('../images/yoshi.svg');
+}
+
+.picto--francois{
+    background-image: url('../images/waluigi.svg');
+}
+
+.picto--cedric{
+    background-image: url('../images/bobomb.svg');
+}
+
+.illu{
+    display:none;
+}
+
+.fleche{
+    background-image: url('../images/fleche.svg');
+}
