@@ -1,181 +1,179 @@
-[
-  {
-    "performeur" : {
-      "description": "En tant que performeur, tu ne veux pas juste terminer les jeux, tu veux le finir à 100% et être le meilleur ! Pour y arriver, tu n'hésites pas à user de stratégie, que tu peaufines toujours plus.",
-      "crit1": "achevement",
-      "crit2": "strategie",
-      "crit3": "gagner",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "stratégie"
-      ]
-    },
-    "aventurier" : {
-      "description": "En tant qu'aventurier, tu aimes te balader, explorer tous les recoins. Tu veux découvrir tous les secrets et mystères cachés.",
-      "crit1": "exploration",
-      "crit2": "aventure",
-      "crit3": "decouverte",
-      "categories": [
-        "monde ouvert",
-        "aventure",
-        "jdr"
-      ]
-    },
-    "coéquipier" : {
-      "description": "En tant que coéquipier, tu te sens mieux lorsque tu joues avec d'autres personnes, tu es toujours prêt à partager tes parties de jeu, que ce soit avec tes amis ou des inconnus, ton but est de passer un bon moment.",
-      "crit1": "histoire",
-      "crit2": "collaboration",
-      "crit3": "echange/partage",
-      "categories": [
-        "coopération",
-        "multijoueurs"
-      ]
-    },
-    "tueur" : {
-      "description": "En tant que tueur, tu aimes te défouler. Tu es en recherche constante de la meilleure méthode pour atteindre ta cible, si bien que tu ne la manques presque jamais. Tu es craint et ça te plait car tu travailles dur pour être aussi fort.",
-      "crit1": "tuer",
-      "crit2": "combats",
-      "crit3": "armes",
-      "categories": [
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    },
-    "stratège" : {
-      "description": "En tant que stratège, tu es perfectionniste, tu aimes peaufiner ta stratégie en explorant toutes les facettes du jeu afin de toujours monter dans le classement et récolter un maximum de prestige. Être bloqué dans un jeu ne te fait pas peur, au contraire, tu apprécies d'autant plus lorsqu'un jeu te résiste.",
-      "crit1": "strategie",
-      "crit2": "gagner",
-      "crit3": "exploration",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "stratégie",
-        "monde ouvert",
-        "aventure"
-      ]
-    },
-    "leader" : {
-      "description": "En tant que leader, tu es toujours là pour mener ton équipe vers la victoire, tu n'hésites pas à motiver les troupes afin de mener ton équipe en haut du classement.",
-      "crit1": "strategie",
-      "crit2": "gagner",
-      "crit3": "collaboration",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "coopération",
-        "multijoueurs"
-      ]
-    },
-    "traqueur" : {
-      "description": "En tant que traqueur, ton but est de récolter un maximum de primes. Et gare à celui qui tenterait de s'en prendre à toi car tu n'hésiteras pas à lui montrer que tu n'as pas voler ton prestige.",
-      "crit1": "strategie",
-      "crit2": "gagner",
-      "crit3": "combats",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    },
-    "rôliste" : {
-      "description": "En tant que rôliste, tu aimes incarner des personnages différents, échanger avec les autres joueurs. Au fil du jeu, tu aimes incarner un personnage et façonner sa personnalité. Tu crées ainsi une histoire qui t'es propre.",
-      "crit1": "exploration",
-      "crit2": "aventure",
-      "crit3": "partage",
-      "categories": [
-        "monde ouvert",
-        "aventure",
-        "jdr",
-        "coopération",
-        "multijoueurs"
-      ]
-    },
-    "mercenaire" : {
-      "description": "En tant que mercenaire, tu utilises ton environement à ton avantage, ta connaissance du jeu te permet d'être le plus efficace en tant qu'équipier et surtout en tant qu'adversaire.",
-      "crit1": "exploration",
-      "crit2": "combats",
-      "crit3": "armes",
-      "categories": [
-        "monde ouvert",
-        "aventure",
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    },
-    "boss" : {
-      "description": "En tant que boss, tu aimes être avec tes coéquipiers, ta maitrise du jeu fait de toi une personne sur laquelle on peut compter. Tu peux très bien être le meilleur ami et le pire enemi de chacun.",
-      "crit1": "collaboration",
-      "crit2": "tuer",
-      "crit3": "combats",
-      "categories": [
-        "coopération",
-        "multijoueurs",
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    },
-    "faux gamer" : {
-      "description": "En tant que faux gamer, tu prends du plaisir à remplir ta bibliothèque de tout plein de jeux, même si tu n'y joues jamais.",
-      "crit1": "",
-      "crit2": "",
-      "crit3": "",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "stratégie",
-        "monde ouvert",
-        "aventure",
-        "jeu de rôle",
-        "coopération",
-        "multijoueurs",
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    },
-    "indécis" : {
-      "description": "En tant qu'indécis, tu prends plus de temps à choisir le jeu qu'à y jouer réellement. Tu as donc tendance à suivre tes amis lorsque la situation se présente.",
-      "crit1": "",
-      "crit2": "",
-      "crit3": "",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "stratégie",
-        "monde ouvert",
-        "aventure",
-        "jeu de rôle",
-        "coopération",
-        "multijoueurs",
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    },
-    "polyvalent" : {
-      "description": "En tant que polyvalent, tu es le meilleur ami que tout les gamers rêvent d'avoir. Avec toi, on ne risque jamais de s'ennuyer.",
-      "crit1": "",
-      "crit2": "",
-      "crit3": "",
-      "categories": [
-        "compétitif",
-        "tour par tour",
-        "stratégie",
-        "monde ouvert",
-        "aventure",
-        "jeu de rôle",
-        "coopération",
-        "multijoueurs",
-        "jeu de tir",
-        "combat",
-        "action"
-      ]
-    }
+{
+  "performeur" : {
+    "description": "En tant que performeur, tu ne veux pas juste terminer les jeux, tu veux le finir à 100% et être le meilleur ! Pour y arriver, tu n'hésites pas à user de stratégie, que tu peaufines toujours plus.",
+    "crit1": "achevement",
+    "crit2": "strategie",
+    "crit3": "gagner",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "stratégie"
+    ]
+  },
+  "aventurier" : {
+    "description": "En tant qu'aventurier, tu aimes te balader, explorer tous les recoins. Tu veux découvrir tous les secrets et mystères cachés.",
+    "crit1": "exploration",
+    "crit2": "aventure",
+    "crit3": "decouverte",
+    "categories": [
+      "monde ouvert",
+      "aventure",
+      "jdr"
+    ]
+  },
+  "coéquipier" : {
+    "description": "En tant que coéquipier, tu te sens mieux lorsque tu joues avec d'autres personnes, tu es toujours prêt à partager tes parties de jeu, que ce soit avec tes amis ou des inconnus, ton but est de passer un bon moment.",
+    "crit1": "histoire",
+    "crit2": "collaboration",
+    "crit3": "echange/partage",
+    "categories": [
+      "coopération",
+      "multijoueurs"
+    ]
+  },
+  "tueur" : {
+    "description": "En tant que tueur, tu aimes te défouler. Tu es en recherche constante de la meilleure méthode pour atteindre ta cible, si bien que tu ne la manques presque jamais. Tu es craint et ça te plait car tu travailles dur pour être aussi fort.",
+    "crit1": "tuer",
+    "crit2": "combats",
+    "crit3": "armes",
+    "categories": [
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
+  },
+  "stratège" : {
+    "description": "En tant que stratège, tu es perfectionniste, tu aimes peaufiner ta stratégie en explorant toutes les facettes du jeu afin de toujours monter dans le classement et récolter un maximum de prestige. Être bloqué dans un jeu ne te fait pas peur, au contraire, tu apprécies d'autant plus lorsqu'un jeu te résiste.",
+    "crit1": "strategie",
+    "crit2": "gagner",
+    "crit3": "exploration",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "stratégie",
+      "monde ouvert",
+      "aventure"
+    ]
+  },
+  "leader" : {
+    "description": "En tant que leader, tu es toujours là pour mener ton équipe vers la victoire, tu n'hésites pas à motiver les troupes afin de mener ton équipe en haut du classement.",
+    "crit1": "strategie",
+    "crit2": "gagner",
+    "crit3": "collaboration",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "coopération",
+      "multijoueurs"
+    ]
+  },
+  "traqueur" : {
+    "description": "En tant que traqueur, ton but est de récolter un maximum de primes. Et gare à celui qui tenterait de s'en prendre à toi car tu n'hésiteras pas à lui montrer que tu n'as pas voler ton prestige.",
+    "crit1": "strategie",
+    "crit2": "gagner",
+    "crit3": "combats",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
+  },
+  "rôliste" : {
+    "description": "En tant que rôliste, tu aimes incarner des personnages différents, échanger avec les autres joueurs. Au fil du jeu, tu aimes incarner un personnage et façonner sa personnalité. Tu crées ainsi une histoire qui t'es propre.",
+    "crit1": "exploration",
+    "crit2": "aventure",
+    "crit3": "partage",
+    "categories": [
+      "monde ouvert",
+      "aventure",
+      "jdr",
+      "coopération",
+      "multijoueurs"
+    ]
+  },
+  "mercenaire" : {
+    "description": "En tant que mercenaire, tu utilises ton environement à ton avantage, ta connaissance du jeu te permet d'être le plus efficace en tant qu'équipier et surtout en tant qu'adversaire.",
+    "crit1": "exploration",
+    "crit2": "combats",
+    "crit3": "armes",
+    "categories": [
+      "monde ouvert",
+      "aventure",
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
+  },
+  "boss" : {
+    "description": "En tant que boss, tu aimes être avec tes coéquipiers, ta maitrise du jeu fait de toi une personne sur laquelle on peut compter. Tu peux très bien être le meilleur ami et le pire enemi de chacun.",
+    "crit1": "collaboration",
+    "crit2": "tuer",
+    "crit3": "combats",
+    "categories": [
+      "coopération",
+      "multijoueurs",
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
+  },
+  "faux gamer" : {
+    "description": "En tant que faux gamer, tu prends du plaisir à remplir ta bibliothèque de tout plein de jeux, même si tu n'y joues jamais.",
+    "crit1": "",
+    "crit2": "",
+    "crit3": "",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "stratégie",
+      "monde ouvert",
+      "aventure",
+      "jeu de rôle",
+      "coopération",
+      "multijoueurs",
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
+  },
+  "indécis" : {
+    "description": "En tant qu'indécis, tu prends plus de temps à choisir le jeu qu'à y jouer réellement. Tu as donc tendance à suivre tes amis lorsque la situation se présente.",
+    "crit1": "",
+    "crit2": "",
+    "crit3": "",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "stratégie",
+      "monde ouvert",
+      "aventure",
+      "jeu de rôle",
+      "coopération",
+      "multijoueurs",
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
+  },
+  "polyvalent" : {
+    "description": "En tant que polyvalent, tu es le meilleur ami que tout les gamers rêvent d'avoir. Avec toi, on ne risque jamais de s'ennuyer.",
+    "crit1": "",
+    "crit2": "",
+    "crit3": "",
+    "categories": [
+      "compétitif",
+      "tour par tour",
+      "stratégie",
+      "monde ouvert",
+      "aventure",
+      "jeu de rôle",
+      "coopération",
+      "multijoueurs",
+      "jeu de tir",
+      "combat",
+      "action"
+    ]
   }
-]
+}
