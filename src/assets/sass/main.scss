@@ -1,25 +1,28 @@
-@import 'var';
+@use '_var' as *;
+@use '_grid';
+@use '_normalize';
 
-.section--hidden{
-    display: none;
-}
-.headerListe__el--hidden{
-    display: none;
-}
+
+/*landing page*/
 
 
 .titre{
     font-family: $font--title;
     font-size:$size--second;
     width:80%;
-    line-height:105px;
+    line-height:100px;
+    margin:0px;
 }
-
 
 .text--indent{
  overflow-x: hidden;
  text-indent: -1999px;   
  display:none;
+}
+
+.titre--Tgrand{
+    font-size:$size--second;
+    font-weight:600;
 }
 
 .titre--grand{
@@ -32,17 +35,6 @@
     font-size:$size--fourth;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 body{
     font-size:$size--paragraph;
     font-family:$font--paragraph;
@@ -51,10 +43,24 @@ body{
     background: linear-gradient(-45deg, #191919, #1A2F36, #261C36, #361936);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    margin:25px auto;
+    margin:25px 16px;
 }
 
+body p{
+    margin:0px;
+}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 .logo{
     height:70px;
@@ -91,70 +97,34 @@ body{
 
 .fleche{
     background-image: url('../images/fleche.svg');
+    background-repeat:no-repeat;
+    margin:0px auto;
+    width:70px;
+    height:50px;
+    background-size: cover;
+    background-position: center;
 }
 
-// Bouton
-// =========
-.btnContainer{
-    position: relative;
-    width: 118px;
-    height: 57px;
-}
-.btnContainer__el{
-    display: block;
-    height: 45px;
-    width: 118px;
-    text-align: center;
-    padding-top: 14px;
-    padding-right: 28px;
-    font-size: 25px;
-    text-transform: uppercase;
-    color: #eef0f2;
-    border: 3px solid #eef0f2;
-    border-radius: 13px;
-}
-.btnContainer__el--epaisseur{
-    position: absolute;
-    bottom: -20px;
-    width: 62px;
-    border-top: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    width: 118px;
-    height: 30px;
-}
-.btnContainer__el--play{
-    position: absolute;
-    z-index: 10;
-    height: 43px;
-    width: 118px;
-    top: 0;
-    text-decoration: none;
-}
-.btnContainer__el--play:after{
-    content: '';
-    width: 24px;
-    height: 24px;
-    background-image: url('http://cedric-vangheluwe.be/projets/2020-21/DataPlay/prototype/assets/images/iconmonstr-play.svg');
-    position: absolute;
-    top: 15px;
-    margin-left: 10px;
+.footerListe{
+    list-style-type: none;
+    text-decoration:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-inline-start: 0px;
 }
 
-.btnContainer__el--play:hover{
-    background-color: #eef0f2;
-    color: #191919;
-    transform: translateY(6px);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out;
-
-    &:after{
-        background-image: url('http://cedric-vangheluwe.be/projets/2020-21/DataPlay/prototype/assets/images/iconmonstr-play-dark.svg');
-    }
-}
-.btnContainer__el--play:active{
-    transform: translateY(13px);    
+.section--header{
+    height:100vh;
 }
 
-// bouton fin
-// =============
+
+*/questionnaire*/
+
+.section--hidden{
+    display: none;
+}
+
+.headerListe__el--hidden{
+    display: none;
+}
