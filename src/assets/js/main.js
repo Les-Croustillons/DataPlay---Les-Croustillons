@@ -22,18 +22,6 @@ let tueur = 0;
 let profile = "";
 
 
-fetch('assets/json/donnees.json')
-.then((response) =>{
-    return response.json();
-})
-.then((database) =>{
-    console.log(database);
-    
-})
-.catch((response) =>{
-    console.log('data non trouvée => ' + response);
-});
-
 // for(let input of inputs){
 //     input.addEventListener('input', (e) =>{
 //         btnsSuivant[nSection].removeAttribute('disabled');
@@ -237,6 +225,18 @@ btnTerminer.addEventListener('click', (e) =>{
 
     profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
     console.log('RESULTAT : tu es ' + profile);
+
+    fetch('assets/json/donnees.json')
+    .then((response) =>{
+        return response.json();
+    })
+    .then((database) =>{
+        console.log(database[0].performeur.description);
+        
+    })
+    .catch((response) =>{
+        console.log('data non trouvée => ' + response);
+    });
     
 });
 
