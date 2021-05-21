@@ -92,3 +92,69 @@
 .fleche{
     background-image: url('../images/fleche.svg');
 }
+
+// Bouton
+// =========
+.btnContainer{
+    position: relative;
+    width: 118px;
+    height: 57px;
+  }
+  .btnContainer__el{
+    display: block;
+    height: 45px;
+    width: 118px;
+    text-align: center;
+    padding-top: 14px;
+    padding-right: 28px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #eef0f2;
+    border: 3px solid #eef0f2;
+    border-radius: 13px;
+  }
+  .btnContainer__el--epaisseur{
+    position: absolute;
+    bottom: -20px;
+    width: 62px;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 118px;
+    height: 30px;
+  }
+  .btnContainer__el--play{
+    position: absolute;
+    z-index: 10;
+    height: 43px;
+    width: 118px;
+    top: 0;
+    text-decoration: none;
+  }
+  .btnContainer__el--play:after{
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url('http://cedric-vangheluwe.be/projets/2020-21/DataPlay/prototype/assets/images/iconmonstr-play.svg');
+      position: absolute;
+      top: 15px;
+      margin-left: 10px;
+  }
+  
+  .btnContainer__el--play:hover{
+    background-color: #eef0f2;
+    color: #191919;
+    transform: translateY(6px);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    
+    &:after{
+      background-image: url('http://cedric-vangheluwe.be/projets/2020-21/DataPlay/prototype/assets/images/iconmonstr-play-dark.svg');
+    }
+  }
+  .btnContainer__el--play:active{
+    transform: translateY(13px);
+  }
+
+  // bouton fin
+  // =============
