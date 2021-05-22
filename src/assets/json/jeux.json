@@ -1,6 +1,7 @@
 {
-  "stratège" : {
+  "stratege" : {
     "description": "En tant que stratège, tu es perfectionniste, tu aimes peaufiner ta stratégie en explorant toutes les facettes du jeu afin de toujours monter dans le classement et récolter un maximum de prestige. Être bloqué dans un jeu ne te fait pas peur, au contraire, tu apprécies d'autant plus lorsqu'un jeu te résiste.",
+    "categoriesProfile": "compétitif, tour par tour, stratégie, monde ouvert, aventure",
     "mobile": [
       {
         "categorie": "stratégie, tour par tour, compétitif",
@@ -73,6 +74,7 @@
   },
   "leader" : {
     "description": "En tant que leader, tu es toujours là pour mener ton équipe vers la victoire, tu n'hésites pas à motiver les troupes afin de mener ton équipe en haut du classement.",
+    "categoriesProfile": "compétitif, tour par tour, coopération, multijoueurs",
     "mobile": [
       {
         "categorie": "compétitif, multijoueurs",
@@ -145,6 +147,7 @@
   },
   "traqueur" : {
     "description": "En tant que traqueur, ton but est de récolter un maximum de primes. Et gare à celui qui tenterait de s'en prendre à toi car tu n'hésiteras pas à lui montrer que tu n'as pas voler ton prestige.",
+    "categoriesProfile": "compétitif, tour par tour, jeu de tir, combat, action",
     "mobile": [
       {
         "categorie": "compétitif, combat",
@@ -217,6 +220,7 @@
   },
   "roliste" : {
     "description": "En tant que rôliste, tu aimes incarner des personnages différents, échanger avec les autres joueurs. Au fil du jeu, tu aimes incarner un personnage et façonner sa personnalité. Tu crées ainsi une histoire qui t'es propre.",
+    "categoriesProfile": "monde ouvert, aventure, jeu de rôle, coopération, multijoueurs",
     "mobile": [
       {
         "categorie": "aventure, jeu de rôle, multijoueurs",
@@ -289,6 +293,7 @@
   },
   "mercenaire" : {
     "description": "En tant que mercenaire, tu utilises ton environement à ton avantage, ta connaissance du jeu te permet d'être le plus efficace en tant qu'équipier et surtout en tant qu'adversaire.",
+    "categoriesProfile": "monde ouvert, aventure, jeu de tir, combat, action",
     "mobile": [
       {
         "categorie": "aventure, combat, action",
@@ -361,6 +366,7 @@
   },
   "boss" : {
     "description": "En tant que boss, tu aimes être avec tes coéquipiers, ta maitrise du jeu fait de toi une personne sur laquelle on peut compter. Tu peux très bien être le meilleur ami et le pire enemi de chacun.",
+    "categoriesProfile": "coopération, multijoueurs, jeu de tir, combat, action",
     "mobile": [
       {
         "categorie": "multijoueurs, combat, action",
@@ -433,6 +439,7 @@
   },
   "performeur" : {
     "description": "En tant que performeur, tu ne veux pas juste terminer les jeux, tu veux le finir à 100% et être le meilleur ! Pour y arriver, tu n'hésites pas à user de stratégie, que tu peaufines toujours plus.",
+    "categoriesProfile": "compétitif, tour par tour, stratégie",
     "mobile": [
       {
         "categorie": "compétitif, tour par tour, stratégie",
@@ -505,6 +512,7 @@
   },
   "aventurier" : {
     "description": "En tant qu'aventurier, tu aimes te balader, explorer tous les recoins. Tu veux découvrir tous les secrets et mystères cachés.",
+    "categoriesProfile": "monde ouvert, aventure, jeu de rôle",
     "mobile": [
       {
         "categorie": "monde ouvert, aventure",
@@ -577,6 +585,7 @@
   },
   "coequipier" : {
     "description": "En tant que coéquipier, tu te sens mieux lorsque tu joues avec d'autres personnes, tu es toujours prêt à partager tes parties de jeu, que ce soit avec tes amis ou des inconnus, ton but est de passer un bon moment.",
+    "categoriesProfile": "coopéraiton, multijoueurs",
     "mobile": [
       {
         "categorie": "multijoueurs",
@@ -649,6 +658,7 @@
   },
   "tueur" : {
     "description": "En tant que tueur, tu aimes te défouler. Tu es en recherche constante de la meilleure méthode pour atteindre ta cible, si bien que tu ne la manques presque jamais. Tu es craint et ça te plait car tu travailles dur pour être aussi fort.",
+    "categoriesProfile": "jeu de tir, combat, action",
     "mobile": [
       {
         "categorie": "jeu de tir, action",
@@ -720,6 +730,18 @@
     ]
   },
   "extreme": {
+    "indecis":{
+      "description": "En tant qu'indécis, tu prends plus de temps à choisir le jeu qu'à y jouer réellement. Tu as donc tendance à suivre tes amis lorsque la situation se présente.",
+      "categoriesProfile": "compétitif, tour par tour, stratégie, monde ouvert, aventure, jeu de rôle, coopération, multijoueurs, jeu de tir, combat, action"
+    },
+    "fauxGamer":{
+      "description": "En tant que faux gamer, tu prends du plaisir à remplir ta bibliothèque de tout plein de jeux, même si tu n'y joues jamais.",
+      "categoriesProfile": "compétitif, tour par tour, stratégie, monde ouvert, aventure, jeu de rôle, coopération, multijoueurs, jeu de tir, combat, action"
+    },
+    "polyvalent":{
+      "description": "En tant que polyvalent, tu es le meilleur ami que tout les gamers rêvent d'avoir. Avec toi, on ne risque jamais de s'ennuyer.",
+      "categoriesProfile": "compétitif, tour par tour, stratégie, monde ouvert, aventure, jeu de rôle, coopération, multijoueurs, jeu de tir, combat, action"
+    },
     "mobile": [
       {
         "categorie": "stratégie, tour par tour, compétitif",

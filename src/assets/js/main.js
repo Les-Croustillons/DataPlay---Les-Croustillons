@@ -10,6 +10,10 @@ let btnFermer = document.querySelector('.headerListe__el--fermer');
 let btnRecommencer = document.querySelector('.headerListe__el--recommencer');
 let btnTerminer = document.querySelector('.btnTerminer');
 
+let profilEl = document.querySelector('.profile');
+let descriptionEl = document.querySelector('.description');
+let categoriesEl = document.querySelector('.categories');
+
 let nSection = 0;
 let nSectionSuivant = nSection + 1;
 let nSectionPrecedent = nSection - 1;
@@ -204,6 +208,41 @@ function wichProfile(p, a, c, t){
     return prof;
 };
 
+function createText(prof, datas){
+    profilEl.innerHTML = prof;
+    descriptionEl.innerHTML = `${datas.description}`;
+    categoriesEl.innerHTML = `${datas.categoriesProfile}`;
+};
+
+function selectionData(datas, prof){
+    if(prof == "l'indécis"){
+        createText(prof, datas.extreme.indecis);
+    }else if(prof == "le faux gamer"){
+        createText(prof, datas.extreme.fauxGamer);
+    }else if(prof == "le polyvalent"){
+        createText(prof, datas.extreme.polyvalent);
+    }else if(prof == "le mercenaire"){
+        createText(prof, datas.mercenaire);
+    }else if(prof == "le leader"){
+        createText(prof, datas.leader);
+    }else if(prof == "le traqueur"){
+        createText(prof, datas.traqueur);
+    }else if(prof == "le rôliste"){
+        createText(prof, datas.roliste);
+    }else if(prof == "le stratège"){
+        createText(prof, datas.stratege);
+    }else if(prof == "le boss"){
+        createText(prof, datas.boss);
+    }else if(prof == "le performeur"){
+        createText(prof, datas.performeur);
+    }else if(prof == "l'aventurier"){
+        createText(prof, datas.aventurier);
+    }else if(prof == "le coéquipier"){
+        createText(prof, datas.coequipier);
+    }else if(prof == "le tueur"){
+        createText(prof, datas.tueur);
+    }
+};
 
 fetch('assets/json/jeux.json')
 .then((response) =>{
@@ -235,11 +274,13 @@ fetch('assets/json/jeux.json')
         profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
         console.log('RESULTAT : tu es ' + profile);
     
-        console.log(database.performeur);
-        console.log(database.stratège.mobile[0].img);
-        let image = document.createElement('img');
-        image.setAttribute('src', database.stratège.mobile[0].img);
-        document.querySelector('.jeux--mobile').appendChild(image);
+        // console.log(database.performeur);
+        // console.log(database.stratège.mobile[0].img);
+        // let image = document.createElement('img');
+        // image.setAttribute('src', database.stratège.mobile[0].img);
+        // document.querySelector('.jeux--mobile').appendChild(image);
+
+        selectionData(database, profile);
     });
 })
 .catch((response) =>{
