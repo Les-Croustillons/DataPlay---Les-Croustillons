@@ -1,562 +1,1241 @@
-[
-  {
-    "stratège" : {
-      "description": "En tant que stratège, tu es perfectionniste, tu aimes peaufiner ta stratégie en explorant toutes les facettes du jeu afin de toujours monter dans le classement et récolter un maximum de prestige. Être bloqué dans un jeu ne te fait pas peur, au contraire, tu apprécies d'autant plus lorsqu'un jeu te résiste.",
-      "mobile": [
-        {
-          "categorieMobile": "stratégie, tour par tour, compétitif",
-          "nomMobile": "Échecs : jouer et apprendre",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.chess&gl=BE"
-        },
-        {
-          "categorieMobile": "stratégie",
-          "nomMobile": "Plague Inc.",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.miniclip.plagueinc&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, stratégie",
-          "nomMobile": "Clash of Clans",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans&gl=BE"
-        }
-      ],
-      "pc" : [
-        {
-          "categoriePc": "compétitif, stratégie",
-          "nomPc": "League of Legends",
-          "urlPc": "https://na.leagueoflegends.com/fr-fr/"
-        },
-        {
-          "categoriePc": "stratégie, tour par tour",
-          "nomPc": "HearthStone",
-          "urlPc": "https://playhearthstone.com/fr-fr"
-        },
-        {
-          "categoriePc": "stratégie, aventure",
-          "nomPc": "Warcraft III : reforged",
-          "urlPc": "https://playwarcraft3.com/fr-fr/"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "stratégie, aventure",
-          "nomConsole": "It Takes Two",
-          "urlConsole": "https://www.ea.com/fr-fr/games/it-takes-two"
-        },
-        {
-          "categorieConsole": "stratégie, aventure, tour par tour, monde ouvert",
-          "nomConsole": "Pokemon bouclier",
-          "urlConsole": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Pokemon-Bouclier-1522110.html"
-        },
-        {
-          "categorieConsole": "stratégie, aventure",
-          "nomConsole": "Northgard",
-          "urlConsole": "https://northgard.net/"
-        }
-      ]
-    }
+{
+  "stratège" : {
+    "description": "En tant que stratège, tu es perfectionniste, tu aimes peaufiner ta stratégie en explorant toutes les facettes du jeu afin de toujours monter dans le classement et récolter un maximum de prestige. Être bloqué dans un jeu ne te fait pas peur, au contraire, tu apprécies d'autant plus lorsqu'un jeu te résiste.",
+    "mobile": [
+      {
+        "categorie": "stratégie, tour par tour, compétitif",
+        "nom": "Échecs : jouer et apprendre",
+        "url": "https://play.google.com/store/apps/details?id=com.chess&gl=BE",
+        "img": "assets/images/Mobile_png_opti/Echecs.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/Echecs@2x.png"
+      },
+      {
+        "categorie": "stratégie",
+        "nom": "Plague Inc.",
+        "url": "https://play.google.com/store/apps/details?id=com.miniclip.plagueinc&gl=BE",
+        "img": "assets/images/Mobile_png_opti/PlagueInc.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/PlagueInc@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Clash of Clans",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ClashofClans.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ClashofClans@2x.png"
+      }
+    ],
+    "pc" : [
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "League of Legends",
+        "url": "https://na.leagueoflegends.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/LeagueOfLegends.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LeagueOfLegends@2x.png"
+      },
+      {
+        "categorie": "stratégie, tour par tour",
+        "nom": "HearthStone",
+        "url": "https://playhearthstone.com/fr-fr",
+        "img": "assets/images/Pc_png_opti/HearthStone.png",
+        "img2x": "assets/images/Pc_png_2x_opti/HearthStone@2x.png"
+      },
+      {
+        "categorie": "stratégie, aventure",
+        "nom": "Warcraft III : reforged",
+        "url": "https://playwarcraft3.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/Warcraft3.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Warcraft3@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "stratégie, aventure",
+        "nom": "It Takes Two",
+        "url": "https://www.ea.com/fr-fr/games/it-takes-two",
+        "img": "assets/images/Console_png_opti/ItTakesTwo.png",
+        "img2x": "assets/images/Console_png_2x_opti/ItTakesTwo@2x.png"
+      },
+      {
+        "categorie": "stratégie, aventure, tour par tour, monde ouvert",
+        "nom": "Pokemon bouclier",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Pokemon-Bouclier-1522110.html",
+        "img": "assets/images/Console_png_opti/PokemonBouclier.png",
+        "img2x": "assets/images/Console_png_2x_opti/PokemonBouclier@2x.png"
+      },
+      {
+        "categorie": "stratégie, aventure",
+        "nom": "Northgard",
+        "url": "https://northgard.net/",
+        "img": "assets/images/Console_png_opti/Northgard.png",
+        "img2x": "assets/images/Console_png_2x_opti/Northgard@2x.png"
+      }
+    ]
   },
-  {
-    "leader" : {
-      "description": "En tant que leader, tu es toujours là pour mener ton équipe vers la victoire, tu n'hésites pas à motiver les troupes afin de mener ton équipe en haut du classement.",
-      "mobile": [
-        {
-          "categorieMobile": "compétitif, multijoueurs",
-          "nomMobile": "Tactile Wars",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.ankama.tactilwar&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, coopération, multijoueurs",
-          "nomMobile": "Brawl Stars",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, multijoueurs, coopération",
-          "nomMobile": "Pokemon Go",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "compétitif, coopération, multijoueurs",
-          "nomPc": "Overwatch",
-          "urlPc": "https://playoverwatch.com/fr-fr/"
-        },
-        {
-          "categoriePc": "compétitif, coopération, multijoueurs",
-          "nomPc": "World of Tanks",
-          "urlPc": "https://worldoftanks.eu/join/8076_FR1?pub_id=wot_ong_eu_fr-be_g_s-b_acq_kw_world_of_tanks&xid_source=google&xidMedium=cpc&xid_network=g&xid_campaign_id=200968242&xid_adgroup_id=12889901202&xid_ad_id=425033366140&xid_target_id=kwd-19594335510&xid_keyword=world+of+tanks&xid_placement=&xid_device_type=c&xid_position=&xid_region=1001400&xid_position_type=-&xid_target=&xid_feeditemid=&xidMatchtype=e&xid_clickid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&url=https://worldoftanks.eu&gclid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&sid=SIDtbqmWlTvYTXkrP4SL_RUdclpk5AEYEaUsEn5bEpL3JFWol1v0joNFAhWF3oaUvtOXTcJGHfNpelWl3dnzPXlL49c9MB_141tOfKYV82i3M1V_XpZeDsqKX1F6I2athQ4MFsBqfCUvH-hsoFoopnuHV-ZWQ&enctid=cbeq5zukq9fl&lpsn=WOT+ACQ+WW+About+Game+AB-Test_UsersIncentives_1&foris=1"
-        },
-        {
-          "categoriePc": "compétitif, tour par tour, multijoueurs",
-          "nomPc": "Legends of Runeterra",
-          "urlPc": "https://playruneterra.com/fr-fr/"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "compétitif, coopération, multijoueurs",
-          "nomConsole": "Roquet League",
-          "urlConsole": "https://www.rocketleague.com/fr/"
-        },
-        {
-          "categorieConsole": "compétitif, coopération, multijoueurs",
-          "nomConsole": "Call of Duty : Black Ops Cold War",
-          "urlConsole": "https://www.callofduty.com/be/fr/blackopscoldwar"
-        },
-        {
-          "categorieConsole": "compétitif, coopération, multijoueurs",
-          "nomConsole": "Battlefield V",
-          "urlConsole": "https://www.ea.com/fr-fr/games/battlefield"
-        }
-      ]
-    }
+  "leader" : {
+    "description": "En tant que leader, tu es toujours là pour mener ton équipe vers la victoire, tu n'hésites pas à motiver les troupes afin de mener ton équipe en haut du classement.",
+    "mobile": [
+      {
+        "categorie": "compétitif, multijoueurs",
+        "nom": "Tactile Wars",
+        "url": "https://play.google.com/store/apps/details?id=com.ankama.tactilwar&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TactileWars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TactileWars@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Brawl Stars",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE",
+        "img": "assets/images/Mobile_png_opti/BrawlStars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/BrawlStars@2x.png"
+      },
+      {
+        "categorie": "compétitif, multijoueurs, coopération",
+        "nom": "Pokemon Go",
+        "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE",
+        "img": "assets/images/Mobile_png_opti/PokemonGO.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/PokemonGO@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Overwatch",
+        "url": "https://playoverwatch.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/Overwatch.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Overwatch@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "World of Tanks",
+        "url": "https://worldoftanks.eu/join/8076_FR1?pub_id=wot_ong_eu_fr-be_g_s-b_acq_kw_world_of_tanks&xid_source=google&xidMedium=cpc&xid_network=g&xid_campaign_id=200968242&xid_adgroup_id=12889901202&xid_ad_id=425033366140&xid_target_id=kwd-19594335510&xid_keyword=world+of+tanks&xid_placement=&xid_device_type=c&xid_position=&xid_region=1001400&xid_position_type=-&xid_target=&xid_feeditemid=&xidMatchtype=e&xid_clickid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&url=https://worldoftanks.eu&gclid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&sid=SIDtbqmWlTvYTXkrP4SL_RUdclpk5AEYEaUsEn5bEpL3JFWol1v0joNFAhWF3oaUvtOXTcJGHfNpelWl3dnzPXlL49c9MB_141tOfKYV82i3M1V_XpZeDsqKX1F6I2athQ4MFsBqfCUvH-hsoFoopnuHV-ZWQ&enctid=cbeq5zukq9fl&lpsn=WOT+ACQ+WW+About+Game+AB-Test_UsersIncentives_1&foris=1",
+        "img": "assets/images/Pc_png_opti/WorldOfTanks.png",
+        "img2x": "assets/images/Pc_png_2x_opti/WorldOfTanks@2x.png"
+      },
+      {
+        "categorie": "compétitif, tour par tour, multijoueurs",
+        "nom": "Legends of Runeterra",
+        "url": "https://playruneterra.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/LegendsOfRuneterra.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LegendsOfRuneterra@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Rocket League",
+        "url": "https://www.rocketleague.com/fr/",
+        "img": "assets/images/Console_png_opti/RocketLeague.png",
+        "img2x": "assets/images/Console_png_2x_opti/RocketLeague@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Call of Duty : Black Ops Cold War",
+        "url": "https://www.callofduty.com/be/fr/blackopscoldwar",
+        "img": "assets/images/Console_png_opti/CallOfDutyBlackOpsColdWar.png",
+        "img2x": "assets/images/Console_png_2x_opti/CallOfDutyBlackOpsColdWar@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Battlefield V",
+        "url": "https://www.ea.com/fr-fr/games/battlefield",
+        "img": "assets/images/Console_png_opti/BattlefieldV.png",
+        "img2x": "assets/images/Console_png_2x_opti/BattlefieldV@2x.png"
+      }
+    ]
   },
-  {
-    "traqueur" : {
-      "description": "En tant que traqueur, ton but est de récolter un maximum de primes. Et gare à celui qui tenterait de s'en prendre à toi car tu n'hésiteras pas à lui montrer que tu n'as pas voler ton prestige.",
-      "mobile": [
-        {
-          "categorieMobile": "compétitif, combat",
-          "nomMobile": "Pokemon Go",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, action",
-          "nomMobile": "Clash Royale",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, combat, action",
-          "nomMobile": "Shadow Fight 3",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.nekki.shadowfight3&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "compétitif, action",
-          "nomPc": "Among us",
-          "urlPc": "https://innersloth.com/gameAmongUs.php"
-        },
-        {
-          "categoriePc": "compététif, jeu de tir, action",
-          "nomPc": "Garry's Mod",
-          "urlPc": "https://gmod.facepunch.com"
-        },
-        {
-          "categoriePc": "compététif, tour par tour, combat, action",
-          "nomPc": "Goodgame Empire",
-          "urlPc": "https://empire.goodgamestudios.com"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "compétitif, action",
-          "nomConsole": "Dead by Daylight",
-          "urlConsole": "https://deadbydaylight.com/fr"
-        },
-        {
-          "categorieConsole": "compétitif, jeu de tir, action",
-          "nomConsole": "Monster Hunter : World",
-          "urlConsole": "http://www.monsterhunterworld.com/fr/"
-        },
-        {
-          "categorieConsole": "compétitif, tour par tour, jeu de tir, action",
-          "nomConsole": "Worms W.M.D",
-          "urlConsole": "https://www.team17.com/games/worms-w-m-d/"
-        }
-      ]
-    }
+  "traqueur" : {
+    "description": "En tant que traqueur, ton but est de récolter un maximum de primes. Et gare à celui qui tenterait de s'en prendre à toi car tu n'hésiteras pas à lui montrer que tu n'as pas voler ton prestige.",
+    "mobile": [
+      {
+        "categorie": "compétitif, combat",
+        "nom": "Pokemon Go",
+        "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE",
+        "img": "assets/images/Mobile_png_opti/PokemonGO.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/PokemonGO@2x.png"
+      },
+      {
+        "categorie": "compétitif, action",
+        "nom": "Clash Royale",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ClashRoyale.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ClashRoyale@2x.png"
+      },
+      {
+        "categorie": "compétitif, combat, action",
+        "nom": "Shadow Fight 3",
+        "url": "https://play.google.com/store/apps/details?id=com.nekki.shadowfight3&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ShadowFight3.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ShadowFight3@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "compétitif, action",
+        "nom": "Among us",
+        "url": "https://innersloth.com/gameAmongUs.php",
+        "img": "assets/images/Pc_png_opti/Among_Us.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Among_Us@2x.png"
+      },
+      {
+        "categorie": "compététif, jeu de tir, action",
+        "nom": "Garry's Mod",
+        "url": "https://gmod.facepunch.com",
+        "img": "assets/images/Pc_png_opti/garrysMod.png",
+        "img2x": "assets/images/Pc_png_2x_opti/garrysMod@2x.png"
+      },
+      {
+        "categorie": "compététif, tour par tour, combat, action",
+        "nom": "Goodgame Empire",
+        "url": "https://empire.goodgamestudios.com",
+        "img": "assets/images/Pc_png_opti/GoodgameEmpire.png",
+        "img2x": "assets/images/Pc_png_2x_opti/GoodgameEmpire@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "compétitif, action",
+        "nom": "Dead by Daylight",
+        "url": "https://deadbydaylight.com/fr",
+        "img": "assets/images/Console_png_opti/DeadByDaylight.png",
+        "img2x": "assets/images/Console_png_2x_opti/DeadByDaylight@2x.png"
+      },
+      {
+        "categorie": "compétitif, jeu de tir, action",
+        "nom": "Monster Hunter : World",
+        "url": "http://www.monsterhunterworld.com/fr/",
+        "img": "assets/images/Console_png_opti/MonsterHunter.png",
+        "img2x": "assets/images/Console_png_2x_opti/MonsterHunter@2x.png"
+      },
+      {
+        "categorie": "compétitif, tour par tour, jeu de tir, action",
+        "nom": "Worms W.M.D",
+        "url": "https://www.team17.com/games/worms-w-m-d/",
+        "img": "assets/images/Console_png_opti/WormsWMD.png",
+        "img2x": "assets/images/Console_png_2x_opti/WormsWMD@2x.png"
+      }
+    ]
   },
-  {
-    "roliste" : {
-      "description": "En tant que rôliste, tu aimes incarner des personnages différents, échanger avec les autres joueurs. Au fil du jeu, tu aimes incarner un personnage et façonner sa personnalité. Tu crées ainsi une histoire qui t'es propre.",
-      "mobile": [
-        {
-          "categorieMobile": "aventure, jeu de rôle, multijoueurs",
-          "nomMobile": "AFK Arena",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.lilithgame.hgame.gp&gl=BE"
-        },
-        {
-          "categorieMobile": "aventure, jeu de rôle, multijoueurs",
-          "nomMobile": "Summoners War",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.com2us.smon.normal.freefull.google.kr.android.common&gl=BE"
-        },
-        {
-          "categorieMobile": "aventure, jeu de rôle, coopération, multijoueurs",
-          "nomMobile": "Raid Shadow Legends",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.plarium.raidlegends&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "jeu de rôle, aventure, multijoueurs",
-          "nomPc": "Les Sims 4",
-          "urlPc": "https://www.ea.com/fr-fr/games/the-sims/the-sims-4"
-        },
-        {
-          "categoriePc": "jeu de rôle, aventure, monde ouvert, coopération, multijoueurs",
-          "nomPc": "World of Warcraft",
-          "urlPc": "https://worldofwarcraft.com/fr-fr/"
-        },
-        {
-          "categoriePc": "jeu de rôle, aventure, monde ouvert, coopération, multijoueurs",
-          "nomPc": "Final Fantasy XIV online",
-          "urlPc": "https://www.finalfantasyxiv.com/"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "monde ouvert, aventure, jeu de rôle, coopération, multijoueurs",
-          "nomConsole": "Genshin Impact",
-          "urlConsole": "https://genshin.mihoyo.com/en/home"
-        },
-        {
-          "categorieConsole": "aventure, jeu de rôle, coopération, multijoueurs",
-          "nomConsole": "Animal Crossing : New Horizons",
-          "urlConsole": "https://www.animal-crossing.com/new-horizons/fr/"
-        },
-        {
-          "categorieConsole": "monde ouvert, aventure, jeu de rôle, multijoueurs",
-          "nomConsole": "Grand Theft Auto V",
-          "urlConsole": "https://www.rockstargames.com/fr/games/V"
-        }
-      ]
-    }
+  "roliste" : {
+    "description": "En tant que rôliste, tu aimes incarner des personnages différents, échanger avec les autres joueurs. Au fil du jeu, tu aimes incarner un personnage et façonner sa personnalité. Tu crées ainsi une histoire qui t'es propre.",
+    "mobile": [
+      {
+        "categorie": "aventure, jeu de rôle, multijoueurs",
+        "nom": "AFK Arena",
+        "url": "https://play.google.com/store/apps/details?id=com.lilithgame.hgame.gp&gl=BE",
+        "img": "assets/images/Mobile_png_opti/AfkArena.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/AfkArena@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, multijoueurs",
+        "nom": "Summoners War",
+        "url": "https://play.google.com/store/apps/details?id=com.com2us.smon.normal.freefull.google.kr.android.common&gl=BE",
+        "img": "assets/images/Mobile_png_opti/SummonersWar.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/SummonersWar@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, coopération, multijoueurs",
+        "nom": "Raid Shadow Legends",
+        "url": "https://play.google.com/store/apps/details?id=com.plarium.raidlegends&gl=BE",
+        "img": "assets/images/Mobile_png_opti/RaidShadowLegends.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/RaidShadowLegend@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "jeu de rôle, aventure, multijoueurs",
+        "nom": "Les Sims 4",
+        "url": "https://www.ea.com/fr-fr/games/the-sims/the-sims-4",
+        "img": "assets/images/Pc_png_opti/LesSims4.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LesSims4@2x.png"
+      },
+      {
+        "categorie": "jeu de rôle, aventure, monde ouvert, coopération, multijoueurs",
+        "nom": "World of Warcraft",
+        "url": "https://worldofwarcraft.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/WorldOfWarcraft.png",
+        "img2x": "assets/images/Pc_png_2x_opti/WorldOfWarcraft@2x.png"
+      },
+      {
+        "categorie": "jeu de rôle, aventure, monde ouvert, coopération, multijoueurs",
+        "nom": "Final Fantasy XIV online",
+        "url": "https://www.finalfantasyxiv.com/",
+        "img": "assets/images/Pc_png_opti/FinalFantasyXIVonline.png",
+        "img2x": "assets/images/Pc_png_2x_opti/FinalFantasyXIVonline@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "monde ouvert, aventure, jeu de rôle, coopération, multijoueurs",
+        "nom": "Genshin Impact",
+        "url": "https://genshin.mihoyo.com/en/home",
+        "img": "assets/images/Console_png_opti/GenshinImpact.png",
+        "img2x": "assets/images/Console_png_2x_opti/GenshinImpact@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, coopération, multijoueurs",
+        "nom": "Animal Crossing : New Horizons",
+        "url": "https://www.animal-crossing.com/new-horizons/fr/",
+        "img": "assets/images/Console_png_opti/AnimalCrossing.png",
+        "img2x": "assets/images/Console_png_2x_opti/AnimalCrossing@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de rôle, multijoueurs",
+        "nom": "Grand Theft Auto V",
+        "url": "https://www.rockstargames.com/fr/games/V",
+        "img": "assets/images/Console_png_opti/GrandTheftAutoV.png",
+        "img2x": "assets/images/Console_png_2x_opti/GrandTheftAutoV@2x.png"
+      }
+    ]
   },
-  {
-    "mercenaire" : {
-      "description": "En tant que mercenaire, tu utilises ton environement à ton avantage, ta connaissance du jeu te permet d'être le plus efficace en tant qu'équipier et surtout en tant qu'adversaire.",
-      "mobile": [
-        {
-          "categorieMobile": "aventure, combat, action",
-          "nomMobile": "Teamfight Tactics",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.riotgames.league.teamfighttactics&gl=BE"
-        },
-        {
-          "categorieMobile": "monde ouvert, aventure, jeu de tir, action",
-          "nomMobile": "ARK : Survival Evolved",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.studiowildcard.wardrumstudios.ark&gl=BE"
-        },
-        {
-          "categorieMobile": "aventure, combat, action",
-          "nomMobile": "Mobile Legends : Bang Ban",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.mobile.legends&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "aventure, jeu de tir, action",
-          "nomPc": "Call of Duty : Black Ops Cold War",
-          "urlPc": "https://www.callofduty.com/be/fr/blackopscoldwar"
-        },
-        {
-          "categoriePc": "monde ouvert, aventure, jeu de tir, combat, action",
-          "nomPc": "The Forest",
-          "urlPc": "https://endnightgames.com"
-        },
-        {
-          "categoriePc": "monde ouvert, aventure, jeu de tir, action",
-          "nomPc": "Shadow of the Tomb Raider",
-          "urlPc": "https://tombraider.square-enix-games.com/fr"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "monde ouvert, aventure, jeu de tir, action",
-          "nomConsole": "Grand Theft Auto V",
-          "urlConsole": "https://www.rockstargames.com/fr/games/V"
-        },
-        {
-          "categorieConsole": "aventure, jeu de tir, combat, action",
-          "nomConsole": "Splatoon 2",
-          "urlConsole": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Splatoon-2-1173295.html"
-        },
-        {
-          "categorieConsole": "aventure, jeu de tir, action",
-          "nomConsole": "Resident Evil Village",
-          "urlConsole": "https://www.residentevil.com/village/fr/"
-        }
-      ]
-    }
+  "mercenaire" : {
+    "description": "En tant que mercenaire, tu utilises ton environement à ton avantage, ta connaissance du jeu te permet d'être le plus efficace en tant qu'équipier et surtout en tant qu'adversaire.",
+    "mobile": [
+      {
+        "categorie": "aventure, combat, action",
+        "nom": "Teamfight Tactics",
+        "url": "https://play.google.com/store/apps/details?id=com.riotgames.league.teamfighttactics&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TeamfightTactics.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TeamfightTactics@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, action",
+        "nom": "ARK : Survival Evolved",
+        "url": "https://play.google.com/store/apps/details?id=com.studiowildcard.wardrumstudios.ark&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ARK.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ARK@2x.png"
+      },
+      {
+        "categorie": "aventure, combat, action",
+        "nom": "Mobile Legends : Bang Ban",
+        "url": "https://play.google.com/store/apps/details?id=com.mobile.legends&gl=BE",
+        "img": "assets/images/Mobile_png_opti/MobileLegends.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/MobileLegends@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "aventure, jeu de tir, action",
+        "nom": "Call of Duty : Black Ops Cold War",
+        "url": "https://www.callofduty.com/be/fr/blackopscoldwar",
+        "img": "assets/images/Pc_png_opti/CallOfDutyBlackOpsColdWar.png",
+        "img2x": "assets/images/Pc_png_2x_opti/CallOfDutyBlackOpsColdWar@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, combat, action",
+        "nom": "The Forest",
+        "url": "https://endnightgames.com",
+        "img": "assets/images/Pc_png_opti/TheForest.png",
+        "img2x": "assets/images/Pc_png_2x_opti/TheForest@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, action",
+        "nom": "Shadow of the Tomb Raider",
+        "url": "https://tombraider.square-enix-games.com/fr",
+        "img": "assets/images/Pc_png_opti/ShadowOfTheTombRaider.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ShadowOfTheTombRaider@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, action",
+        "nom": "Grand Theft Auto V",
+        "url": "https://www.rockstargames.com/fr/games/V",
+        "img": "assets/images/Console_png_opti/GrandTheftAutoV.png",
+        "img2x": "assets/images/Console_png_2x_opti/GrandTheftAutoV@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de tir, combat, action",
+        "nom": "Splatoon 2",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Splatoon-2-1173295.html",
+        "img": "assets/images/Console_png_opti/Splatoon2.png",
+        "img2x": "assets/images/Console_png_2x_opti/Splatoon2@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de tir, action",
+        "nom": "Resident Evil Village",
+        "url": "https://www.residentevil.com/village/fr/",
+        "img": "assets/images/Console_png_opti/ResidentEvilVillage.png",
+        "img2x": "assets/images/Console_png_2x_opti/ResidentEvilVillage@2x.png"
+      }
+    ]
   },
-  {
-    "boss" : {
-      "description": "En tant que boss, tu aimes être avec tes coéquipiers, ta maitrise du jeu fait de toi une personne sur laquelle on peut compter. Tu peux très bien être le meilleur ami et le pire enemi de chacun.",
-      "mobile": [
-        {
-          "categorieMobile": "multijoueurs, combat, action",
-          "nomMobile": "Mafia Crime War",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.onemt.mafiacrimewar&gl=BE"
-        },
-        {
-          "categorieMobile": "coopération, multijoueurs, combat, action",
-          "nomMobile": "Brawlhalla",
-          "urlMobile": "https://play.google.com/store/apps/details?id=air.com.ubisoft.brawl.halla.platform.fighting.action.pvp&gl=BE"
-        },
-        {
-          "categorieMobile": "coopération, multijoueurs, combat, action",
-          "nomMobile": "Brawl Stars",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "coopération, multijoueurs, action",
-          "nomPc": "Rocket League",
-          "urlPc": "https://www.rocketleague.com/fr/"
-        },
-        {
-          "categoriePc": "coopération, multijoueurs, jeu de tir, action",
-          "nomPc": "For Honor",
-          "urlPc": "https://www.ubisoft.com/en-gb/game/for-honor"
-        },
-        {
-          "categoriePc": "coopération, multijoueurs, action",
-          "nomPc": "Galactic Civilizations 3",
-          "urlPc": "https://www.galciv3.com"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "coopération, multijoueurs, combat, action",
-          "nomConsole": "Super Smash Bros. Ultimate",
-          "urlConsole": "https://www.smashbros.com/fr_FR/"
-        },
-        {
-          "categorieConsole": "multijoueurs, jeu de tir, action, compétition",
-          "nomConsole": "Overwatch",
-          "urlConsole": "https://playoverwatch.com/fr-fr/"
-        },
-        {
-          "categorieConsole": "multijoueurs, jeu de tir, action, compétition",
-          "nomConsole": "Call of Duty : Black Ops Cold War",
-          "urlConsole": "https://www.callofduty.com/be/fr/blackopscoldwar"
-        }
-      ]
-    }
+  "boss" : {
+    "description": "En tant que boss, tu aimes être avec tes coéquipiers, ta maitrise du jeu fait de toi une personne sur laquelle on peut compter. Tu peux très bien être le meilleur ami et le pire enemi de chacun.",
+    "mobile": [
+      {
+        "categorie": "multijoueurs, combat, action",
+        "nom": "Mafia Crime War",
+        "url": "https://play.google.com/store/apps/details?id=com.onemt.mafiacrimewar&gl=BE",
+        "img": "assets/images/Mobile_png_opti/MafiaCrimeWar.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/MafiaCrimeWar@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, combat, action",
+        "nom": "Brawlhalla",
+        "url": "https://play.google.com/store/apps/details?id=air.com.ubisoft.brawl.halla.platform.fighting.action.pvp&gl=BE",
+        "img": "assets/images/Mobile_png_opti/Brawlhalla.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/Brawlhalla@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, combat, action",
+        "nom": "Brawl Stars",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE",
+        "img": "assets/images/Mobile_png_opti/BrawlStars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/BrawlStars@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "coopération, multijoueurs, action",
+        "nom": "Rocket League",
+        "url": "https://www.rocketleague.com/fr/",
+        "img": "assets/images/Pc_png_opti/RocketLeague.png",
+        "img2x": "assets/images/Pc_png_2x_opti/RocketLeague@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, jeu de tir, action",
+        "nom": "For Honor",
+        "url": "https://www.ubisoft.com/en-gb/game/for-honor",
+        "img": "assets/images/Pc_png_opti/ForHonnor.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ForHonnor@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, action",
+        "nom": "Galactic Civilizations 3",
+        "url": "https://www.galciv3.com",
+        "img": "assets/images/Pc_png_opti/GalacticCivilizations3.png",
+        "img2x": "assets/images/Pc_png_2x_opti/GalacticCivilizations3@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "coopération, multijoueurs, combat, action",
+        "nom": "Super Smash Bros. Ultimate",
+        "url": "https://www.smashbros.com/fr_FR/",
+        "img": "assets/images/Console_png_opti/SuperSmashBrosUltimate.png",
+        "img2x": "assets/images/Console_png_2x_opti/SuperSmashBrosUltimate@2x.png"
+      },
+      {
+        "categorie": "multijoueurs, jeu de tir, action, compétition",
+        "nom": "Overwatch",
+        "url": "https://playoverwatch.com/fr-fr/",
+        "img": "assets/images/Console_png_opti/Overwatch.png",
+        "img2x": "assets/images/Console_png_2x_opti/Northgard@2x.png"
+      },
+      {
+        "categorie": "multijoueurs, jeu de tir, action, compétition",
+        "nom": "Call of Duty : Black Ops Cold War",
+        "url": "https://www.callofduty.com/be/fr/blackopscoldwar",
+        "img": "assets/images/Console_png_opti/CallOfDutyBlackOpsColdWar.png",
+        "img2x": "assets/images/Console_png_2x_opti/CallOfDutyBlackOpsColdWar@2x.png"
+      }
+    ]
   },
-  {
-    "performeur" : {
-      "description": "En tant que performeur, tu ne veux pas juste terminer les jeux, tu veux le finir à 100% et être le meilleur ! Pour y arriver, tu n'hésites pas à user de stratégie, que tu peaufines toujours plus.",
-      "mobile": [
-        {
-          "categorieMobile": "compétitif, tour par tour, stratégie",
-          "nomMobile": "Teamfight Tactics",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.riotgames.league.teamfighttactics&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, stratégie",
-          "nomMobile": "Tactile Wars",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.ankama.tactilwar&gl=BE"
-        },
-        {
-          "categorieMobile": "compétitif, stratégie",
-          "nomMobile": "Lords Mobile : Guerre des Royaumes",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.igg.android.lordsmobile&gl=BE"
-        }
-      ],
-      "pc":[
-        {
-          "categoriePc": "compétitif, tour par tour, stratégie",
-          "nomPc": "Dofus",
-          "urlPc": "https://www.dofus.com/fr"
-        },
-        {
-          "categoriePc": "compétitif, stratégie",
-          "nomPc": "Overwatch",
-          "urlPc": "https://playoverwatch.com/fr-fr/"
-        },
-        {
-          "categoriePc": "compétitif, stratégie",
-          "nomPc": "Valorant",
-          "urlPc": "https://playvalorant.com/en-us/"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "compétitif",
-          "nomConsole": "Mario Kart 8 Deluxe",
-          "urlConsole": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html"
-        },
-        {
-          "categorieConsole": "compétitif",
-          "nomConsole": "Just Dance",
-          "urlConsole": "https://www.ubisoft.com/fr-fr/game/just-dance/2021"
-        },
-        {
-          "categorieConsole": "compétitif, stratégie",
-          "nomConsole": "Rocket League",
-          "urlConsole": "https://www.rocketleague.com/fr/"
-        }
-      ]
-    }
+  "performeur" : {
+    "description": "En tant que performeur, tu ne veux pas juste terminer les jeux, tu veux le finir à 100% et être le meilleur ! Pour y arriver, tu n'hésites pas à user de stratégie, que tu peaufines toujours plus.",
+    "mobile": [
+      {
+        "categorie": "compétitif, tour par tour, stratégie",
+        "nom": "Teamfight Tactics",
+        "url": "https://play.google.com/store/apps/details?id=com.riotgames.league.teamfighttactics&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TeamfightTactics.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TeamfightTactics@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Tactile Wars",
+        "url": "https://play.google.com/store/apps/details?id=com.ankama.tactilwar&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TactileWars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TactileWars@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Lords Mobile : Guerre des Royaumes",
+        "url": "https://play.google.com/store/apps/details?id=com.igg.android.lordsmobile&gl=BE",
+        "img": "assets/images/Mobile_png_opti/LordsMobile.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/LordsMobile@2x.png"
+      }
+    ],
+    "pc":[
+      {
+        "categorie": "compétitif, tour par tour, stratégie",
+        "nom": "Dofus",
+        "url": "https://www.dofus.com/fr",
+        "img": "assets/images/Pc_png_opti/Dofus.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Dofus@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Overwatch",
+        "url": "https://playoverwatch.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/Overwatch.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Overwatch@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Valorant",
+        "url": "https://playvalorant.com/en-us/",
+        "img": "assets/images/Pc_png_opti/valorant.png",
+        "img2x": "assets/images/Pc_png_2x_opti/valorant@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "compétitif",
+        "nom": "Mario Kart 8 Deluxe",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html",
+        "img": "assets/images/Console_png_opti/MarioKart8Deluxe.png",
+        "img2x": "assets/images/Console_png_2x_opti/MarioKart8Deluxe@2x.png"
+      },
+      {
+        "categorie": "compétitif",
+        "nom": "Just Dance",
+        "url": "https://www.ubisoft.com/fr-fr/game/just-dance/2021",
+        "img": "assets/images/Console_png_opti/JustDance.png",
+        "img2x": "assets/images/Console_png_2x_opti/JustDance@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Rocket League",
+        "url": "https://www.rocketleague.com/fr/",
+        "img": "assets/images/Console_png_opti/RocketLeague.png",
+        "img2x": "assets/images/Console_png_2x_opti/RocketLeague@2x.png"
+      }
+    ]
   },
-  {
-    "aventurier" : {
-      "description": "En tant qu'aventurier, tu aimes te balader, explorer tous les recoins. Tu veux découvrir tous les secrets et mystères cachés.",
-      "mobile": [
-        {
-          "categorieMobile": "monde ouvert, aventure",
-          "nomMobile": "Pokemon Go",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE"
-        },
-        {
-          "categorieMobile": "aventure, jeu de rôle",
-          "nomMobile": "Tinker Island",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.kongregate.mobile.tinkerisland.google&gl=BE"
-        },
-        {
-          "categorieMobile": "monde ouvert, aventure, jeu de rôle",
-          "nomMobile": "Genshin Impact",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "monde ouvert, aventure",
-          "nomPc": "Minecraft",
-          "urlPc": "https://www.minecraft.net/fr-fr"
-        },
-        {
-          "categoriePc": "monde ouvert, aventure",
-          "nomPc": "Subnautica: Below Zero",
-          "urlPc": "https://www.subnautica.com/?utm_source=google&utmMedium=paid&utm_campaign=Google_Search_Brand_General&utm_content=514312057565&gclid=CjwKCAjwhYOFBhBkEiwASF3KGZLumMq49UzAMns_-6H6HPwTSicEXEu_bofYIZU4_LA0tIiItVOqChoC5XwQAvD_BwE"
-        },
-        {
-          "categoriePc": "monde ouvert, aventure",
-          "nomPc": "ARK : Survival Evolved",
-          "urlPc": "http://playark.com/"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "monde ouvert, aventure",
-          "nomConsole": "The Legend of Zelda : Breath of the Wild",
-          "urlConsole": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html"
-        },
-        {
-          "categorieConsole": "monde ouvert, aventure",
-          "nomConsole": "Assassin's Creed Valhalla",
-          "urlConsole": "https://www.ubisoft.com/en-us/game/assassins-creed/valhalla"
-        },
-        {
-          "categorieConsole": "monde ouvert, aventure",
-          "nomConsole": "Red Dead Redemption 2",
-          "urlConsole": "https://www.rockstargames.com/reddeadredemption2/"
-        }
-      ]
-    }
+  "aventurier" : {
+    "description": "En tant qu'aventurier, tu aimes te balader, explorer tous les recoins. Tu veux découvrir tous les secrets et mystères cachés.",
+    "mobile": [
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Pokemon Go",
+        "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE",
+        "img": "assets/images/Mobile_png_opti/PokemonGO.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/PokemonGO@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle",
+        "nom": "Tinker Island",
+        "url": "https://play.google.com/store/apps/details?id=com.kongregate.mobile.tinkerisland.google&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TinkerIsland.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TinkerIsland@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de rôle",
+        "nom": "Genshin Impact",
+        "url": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact&gl=BE",
+        "img": "assets/images/Mobile_png_opti/GenshinImpact.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/GenshinImpact@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Minecraft",
+        "url": "https://www.minecraft.net/fr-fr",
+        "img": "assets/images/Pc_png_opti/Minecraft.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Minecraft@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Subnautica: Below Zero",
+        "url": "https://www.subnautica.com/?utm_source=google&utmMedium=paid&utm_campaign=Google_Search_Brand_General&utm_content=514312057565&gclid=CjwKCAjwhYOFBhBkEiwASF3KGZLumMq49UzAMns_-6H6HPwTSicEXEu_bofYIZU4_LA0tIiItVOqChoC5XwQAvD_BwE",
+        "img": "assets/images/Pc_png_opti/Subnautica.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Subnautica@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "ARK : Survival Evolved",
+        "url": "http://playark.com/",
+        "img": "assets/images/Pc_png_opti/ARK.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ARK@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "The Legend of Zelda : Breath of the Wild",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html",
+        "img": "assets/images/Console_png_opti/TheLegendOfZelda.png",
+        "img2x": "assets/images/Console_png_2x_opti/TheLegendOfZelda@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Assassin's Creed Valhalla",
+        "url": "https://www.ubisoft.com/en-us/game/assassins-creed/valhalla",
+        "img": "assets/images/Console_png_opti/AssassinCreedVAlhalla.png",
+        "img2x": "assets/images/Console_png_2x_opti/AssassinCreedVAlhalla@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Red Dead Redemption 2",
+        "url": "https://www.rockstargames.com/reddeadredemption2/",
+        "img": "assets/images/Console_png_opti/RedDeadRedemption2.png",
+        "img2x": "assets/images/Console_png_2x_opti/RedDeadRedemption2@2x.png"
+      }
+    ]
   },
-  {
-    "coequipier" : {
-      "description": "En tant que coéquipier, tu te sens mieux lorsque tu joues avec d'autres personnes, tu es toujours prêt à partager tes parties de jeu, que ce soit avec tes amis ou des inconnus, ton but est de passer un bon moment.",
-      "mobile": [
-        {
-          "categorieMobile": "multijoueurs",
-          "nomMobile": "Draw Something Classic",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.omgpop.dstfree&gl=BE"
-        },
-        {
-          "categorieMobile": "coopération, multijoueurs",
-          "nomMobile": "Brawl Stars",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE"
-        },
-        {
-          "categorieMobile": "coopération, multijoueurs",
-          "nomMobile": "Rush Royale",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.my.defense&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "coopération, multijoueurs",
-          "nomPc": "League of Legends",
-          "urlPc": "https://na.leagueoflegends.com/fr-fr/"
-        },
-        {
-          "categoriePc": "coopération, multijoueurs",
-          "nomPc": "Valorant",
-          "urlPc": "https://playvalorant.com/en-us/"
-        },
-        {
-          "categoriePc": "coopération, multijoueurs",
-          "nomPc": "Biped",
-          "urlPc": "https://www.nextstudios.com/biped/index_en.html"
-        }
-      ],
-      "console": [
-        {
-          "categorieConsole": "coopération, multijoueurs",
-          "nomConsole": "Cuphead",
-          "urlConsole": "http://cupheadgame.com/"
-        },
-        {
-          "categorieConsole": "coopération, multijoueurs",
-          "nomConsole": "Overwatch",
-          "urlConsole": "https://playoverwatch.com/fr-fr/"
-        },
-        {
-          "categorieConsole": "coopération, multijoueurs",
-          "nomConsole": "Overcooked 2",
-          "urlConsole": "https://www.team17.com/games/overcooked-2/"
-        }
-      ]
-    }
+  "coequipier" : {
+    "description": "En tant que coéquipier, tu te sens mieux lorsque tu joues avec d'autres personnes, tu es toujours prêt à partager tes parties de jeu, que ce soit avec tes amis ou des inconnus, ton but est de passer un bon moment.",
+    "mobile": [
+      {
+        "categorie": "multijoueurs",
+        "nom": "Draw Something Classic",
+        "url": "https://play.google.com/store/apps/details?id=com.omgpop.dstfree&gl=BE",
+        "img": "assets/images/Mobile_png_opti/DrawSomethingClassic.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/DrawSomethingClassic@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Brawl Stars",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE",
+        "img": "assets/images/Mobile_png_opti/BrawlStars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/BrawlStars@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Rush Royale",
+        "url": "https://play.google.com/store/apps/details?id=com.my.defense&gl=BE",
+        "img": "assets/images/Mobile_png_opti/RushRoyale.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/RushRoyale@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "League of Legends",
+        "url": "https://na.leagueoflegends.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/LeagueOfLegends.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LeagueOfLegends@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Valorant",
+        "url": "https://playvalorant.com/en-us/",
+        "img": "assets/images/Pc_png_opti/valorant.png",
+        "img2x": "assets/images/Pc_png_2x_opti/valorant@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Biped",
+        "url": "https://www.nextstudios.com/biped/index_en.html",
+        "img": "assets/images/Pc_png_opti/Biped.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Biped@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Cuphead",
+        "url": "http://cupheadgame.com/",
+        "img": "assets/images/Console_png_opti/Cuphead.png",
+        "img2x": "assets/images/Console_png_2x_opti/Cuphead@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Overwatch",
+        "url": "https://playoverwatch.com/fr-fr/",
+        "img": "assets/images/Console_png_opti/Overwatch.png",
+        "img2x": "assets/images/Console_png_2x_opti/Overwatch@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Overcooked 2",
+        "url": "https://www.team17.com/games/overcooked-2/",
+        "img": "assets/images/Console_png_opti/Overcoocked2.png",
+        "img2x": "assets/images/Console_png_2x_opti/Overcoocked2@2x.png"
+      }
+    ]
   },
-  {
-    "tueur" : {
-      "description": "En tant que tueur, tu aimes te défouler. Tu es en recherche constante de la meilleure méthode pour atteindre ta cible, si bien que tu ne la manques presque jamais. Tu es craint et ça te plait car tu travailles dur pour être aussi fort.",
-      "mobile": [
-        {
-          "categorieMobile": "jeu de tir, action",
-          "nomMobile": "Warface",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.my.warface.online.fps.pvp.action.shooter&gl=BE"
-        },
-        {
-          "categorieMobile": "combat, action",
-          "nomMobile": "Raid Shadow Legends",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.plarium.raidlegends&gl=BE"
-        },
-        {
-          "categorieMobile": "combat, action",
-          "nomMobile": "Shadow Fight 3",
-          "urlMobile": "https://play.google.com/store/apps/details?id=com.nekki.shadowfight3&gl=BE"
-        }
-      ],
-      "pc": [
-        {
-          "categoriePc": "jeu de tir, action",
-          "nomPc": "Tom Clancy's Rainbow Six Siege",
-          "urlPc": "https://www.ubisoft.com/fr-fr/game/rainbow-six/siege"
-        },
-        {
-          "categoriePc": "jeu de tir, action",
-          "nomPc": "World of Tanks",
-          "urlPc": "https://worldoftanks.eu/join/8076_FR1?pub_id=wot_ong_eu_fr-be_g_s-b_acq_kw_world_of_tanks&xid_source=google&xidMedium=cpc&xid_network=g&xid_campaign_id=200968242&xid_adgroup_id=12889901202&xid_ad_id=425033366140&xid_target_id=kwd-19594335510&xid_keyword=world+of+tanks&xid_placement=&xid_device_type=c&xid_position=&xid_region=1001400&xid_position_type=-&xid_target=&xid_feeditemid=&xidMatchtype=e&xid_clickid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&url=https://worldoftanks.eu&gclid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&sid=SIDtbqmWlTvYTXkrP4SL_RUdclpk5AEYEaUsEn5bEpL3JFWol1v0joNFAhWF3oaUvtOXTcJGHfNpelWl3dnzPXlL49c9MB_141tOfKYV82i3M1V_XpZeDsqKX1F6I2athQ4MFsBqfCUvH-hsoFoopnuHV-ZWQ&enctid=cbeq5zukq9fl&lpsn=WOT+ACQ+WW+About+Game+AB-Test_UsersIncentives_1&foris=1"
-        },
-        {
-          "categoriePc": "jeu de tir, action",
-          "nomPc": "Fortnite",
-          "urlPc": "https://www.epicgames.com/fortnite/fr/home"
-        }
-      ], 
-      "console": [
-        {
-          "categorieConsole": "jeu de tir, action",
-          "nomConsole": "Call of Duty : Black Ops Cold War",
-          "urlConsole": "https://www.callofduty.com/be/fr/blackopscoldwar"
-        },
-        {
-          "categorieConsole": "combat, action",
-          "nomConsole": "Mortal Kombat 11",
-          "urlConsole": "https://www.mortalkombat.com/"
-        },
-        {
-          "categorieConsole": "jeu de tir, action",
-          "nomConsole": "APEX : Legends",
-          "urlConsole": "https://www.ea.com/fr-fr/games/apex-legends"
-        }
-      ]
-    }
+  "tueur" : {
+    "description": "En tant que tueur, tu aimes te défouler. Tu es en recherche constante de la meilleure méthode pour atteindre ta cible, si bien que tu ne la manques presque jamais. Tu es craint et ça te plait car tu travailles dur pour être aussi fort.",
+    "mobile": [
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Warface",
+        "url": "https://play.google.com/store/apps/details?id=com.my.warface.online.fps.pvp.action.shooter&gl=BE",
+        "img": "assets/images/Mobile_png_opti/Warface.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/Warface@2x.png"
+      },
+      {
+        "categorie": "combat, action",
+        "nom": "Raid Shadow Legends",
+        "url": "https://play.google.com/store/apps/details?id=com.plarium.raidlegends&gl=BE",
+        "img": "assets/images/Mobile_png_opti/RaidShadowLegends.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/RaidShadowLegends@2x.png"
+      },
+      {
+        "categorie": "combat, action",
+        "nom": "Shadow Fight 3",
+        "url": "https://play.google.com/store/apps/details?id=com.nekki.shadowfight3&gl=BE",
+        "img": "assets/images/ShadowFight3.png",
+        "img2x": "assets/images/ShadowFight3@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Tom Clancy's Rainbow Six Siege",
+        "url": "https://www.ubisoft.com/fr-fr/game/rainbow-six/siege",
+        "img": "assets/images/Pc_png_opti/TomClancysRainbowSixSiege.png",
+        "img2x": "assets/images/Pc_png_2x_opti/TomClancysRainbowSixSiege@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "World of Tanks",
+        "url": "https://worldoftanks.eu/join/8076_FR1?pub_id=wot_ong_eu_fr-be_g_s-b_acq_kw_world_of_tanks&xid_source=google&xidMedium=cpc&xid_network=g&xid_campaign_id=200968242&xid_adgroup_id=12889901202&xid_ad_id=425033366140&xid_target_id=kwd-19594335510&xid_keyword=world+of+tanks&xid_placement=&xid_device_type=c&xid_position=&xid_region=1001400&xid_position_type=-&xid_target=&xid_feeditemid=&xidMatchtype=e&xid_clickid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&url=https://worldoftanks.eu&gclid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&sid=SIDtbqmWlTvYTXkrP4SL_RUdclpk5AEYEaUsEn5bEpL3JFWol1v0joNFAhWF3oaUvtOXTcJGHfNpelWl3dnzPXlL49c9MB_141tOfKYV82i3M1V_XpZeDsqKX1F6I2athQ4MFsBqfCUvH-hsoFoopnuHV-ZWQ&enctid=cbeq5zukq9fl&lpsn=WOT+ACQ+WW+About+Game+AB-Test_UsersIncentives_1&foris=1",
+        "img": "assets/images/Pc_png_opti/WorldOfTanks.png",
+        "img2x": "assets/images/Pc_png_2x_opti/WorldOfTanks@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Fortnite",
+        "url": "https://www.epicgames.com/fortnite/fr/home",
+        "img": "assets/images/Pc_png_opti/Fortnite.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Fortnite@2x.png"
+      }
+    ], 
+    "console": [
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Call of Duty : Black Ops Cold War",
+        "url": "https://www.callofduty.com/be/fr/blackopscoldwar",
+        "img": "assets/images/Console_png_opti/CallOfDutyBlackOpsColdWar.png",
+        "img2x": "assets/images/Console_png_2x_opti/CallOfDutyBlackOpsColdWar@2x.png"
+      },
+      {
+        "categorie": "combat, action",
+        "nom": "Mortal Kombat 11",
+        "url": "https://www.mortalkombat.com/",
+        "img": "assets/images/Console_png_opti/MortalKomat11.png",
+        "img2x": "assets/images/Console_png_2x_opti/MortalKomat11@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "APEX : Legends",
+        "url": "https://www.ea.com/fr-fr/games/apex-legends",
+        "img": "assets/images/Console_png_opti/ApaxLegends.png",
+        "img2x": "assets/images/Console_png_2x_opti/ApaxLegends@2x.png"
+      }
+    ]
+  },
+  "extreme": {
+    "mobile": [
+      {
+        "categorie": "stratégie, tour par tour, compétitif",
+        "nom": "Échecs : jouer et apprendre",
+        "url": "https://play.google.com/store/apps/details?id=com.chess&gl=BE",
+        "img": "assets/images/Mobile_png_opti/Echecs.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/Echecs@2x.png"
+      },
+      {
+        "categorie": "stratégie",
+        "nom": "Plague Inc.",
+        "url": "https://play.google.com/store/apps/details?id=com.miniclip.plagueinc&gl=BE",
+        "img": "assets/images/Mobile_png_opti/PlagueInc.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/PlagueInc@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Clash of Clans",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ClashofClans.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ClashofClans@2x.png"
+      },
+      {
+        "categorie": "compétitif, multijoueurs",
+        "nom": "Tactile Wars",
+        "url": "https://play.google.com/store/apps/details?id=com.ankama.tactilwar&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TactileWars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TactileWars@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Brawl Stars",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=BE",
+        "img": "assets/images/Mobile_png_opti/BrawlStars.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/BrawlStars@2x.png"
+      },
+      {
+        "categorie": "compétitif, multijoueurs, coopération",
+        "nom": "Pokemon Go",
+        "url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&gl=BE",
+        "img": "assets/images/Mobile_png_opti/PokemonGO.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/PokemonGO@2x.png"
+      },
+      {
+        "categorie": "compétitif, action",
+        "nom": "Clash Royale",
+        "url": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ClashRoyale.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ClashRoyale@2x.png"
+      },
+      {
+        "categorie": "compétitif, combat, action",
+        "nom": "Shadow Fight 3",
+        "url": "https://play.google.com/store/apps/details?id=com.nekki.shadowfight3&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ShadowFight3.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ShadowFight3@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, multijoueurs",
+        "nom": "AFK Arena",
+        "url": "https://play.google.com/store/apps/details?id=com.lilithgame.hgame.gp&gl=BE",
+        "img": "assets/images/Mobile_png_opti/AfkArena.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/AfkArena@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, multijoueurs",
+        "nom": "Summoners War",
+        "url": "https://play.google.com/store/apps/details?id=com.com2us.smon.normal.freefull.google.kr.android.common&gl=BE",
+        "img": "assets/images/Mobile_png_opti/SummonersWar.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/SummonersWar@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, coopération, multijoueurs",
+        "nom": "Raid Shadow Legends",
+        "url": "https://play.google.com/store/apps/details?id=com.plarium.raidlegends&gl=BE",
+        "img": "assets/images/Mobile_png_opti/RaidShadowLegends.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/RaidShadowLegend@2x.png"
+      },
+      {
+        "categorie": "aventure, combat, action",
+        "nom": "Teamfight Tactics",
+        "url": "https://play.google.com/store/apps/details?id=com.riotgames.league.teamfighttactics&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TeamfightTactics.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TeamfightTactics@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, action",
+        "nom": "ARK : Survival Evolved",
+        "url": "https://play.google.com/store/apps/details?id=com.studiowildcard.wardrumstudios.ark&gl=BE",
+        "img": "assets/images/Mobile_png_opti/ARK.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/ARK@2x.png"
+      },
+      {
+        "categorie": "aventure, combat, action",
+        "nom": "Mobile Legends : Bang Ban",
+        "url": "https://play.google.com/store/apps/details?id=com.mobile.legends&gl=BE",
+        "img": "assets/images/Mobile_png_opti/MobileLegends.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/MobileLegends@2x.png"
+      },
+      {
+        "categorie": "multijoueurs, combat, action",
+        "nom": "Mafia Crime War",
+        "url": "https://play.google.com/store/apps/details?id=com.onemt.mafiacrimewar&gl=BE",
+        "img": "assets/images/Mobile_png_opti/MafiaCrimeWar.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/MafiaCrimeWar@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, combat, action",
+        "nom": "Brawlhalla",
+        "url": "https://play.google.com/store/apps/details?id=air.com.ubisoft.brawl.halla.platform.fighting.action.pvp&gl=BE",
+        "img": "assets/images/Mobile_png_opti/Brawlhalla.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/Brawlhalla@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Lords Mobile : Guerre des Royaumes",
+        "url": "https://play.google.com/store/apps/details?id=com.igg.android.lordsmobile&gl=BE",
+        "img": "assets/images/Mobile_png_opti/LordsMobile.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/LordsMobile@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle",
+        "nom": "Tinker Island",
+        "url": "https://play.google.com/store/apps/details?id=com.kongregate.mobile.tinkerisland.google&gl=BE",
+        "img": "assets/images/Mobile_png_opti/TinkerIsland.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/TinkerIsland@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de rôle",
+        "nom": "Genshin Impact",
+        "url": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact&gl=BE",
+        "img": "assets/images/Mobile_png_opti/GenshinImpact.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/GenshinImpact@2x.png"
+      },
+      {
+        "categorie": "multijoueurs",
+        "nom": "Draw Something Classic",
+        "url": "https://play.google.com/store/apps/details?id=com.omgpop.dstfree&gl=BE",
+        "img": "assets/images/Mobile_png_opti/DrawSomethingClassic.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/DrawSomethingClassic@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Rush Royale",
+        "url": "https://play.google.com/store/apps/details?id=com.my.defense&gl=BE",
+        "img": "assets/images/Mobile_png_opti/RushRoyale.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/RushRoyale@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Warface",
+        "url": "https://play.google.com/store/apps/details?id=com.my.warface.online.fps.pvp.action.shooter&gl=BE",
+        "img": "assets/images/Mobile_png_opti/Warface.png",
+        "img2x": "assets/images/Mobile_png_2x_opti/Warface@2x.png"
+      }
+    ],
+    "pc": [
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "League of Legends",
+        "url": "https://na.leagueoflegends.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/LeagueOfLegends.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LeagueOfLegends@2x.png"
+      },
+      {
+        "categorie": "stratégie, tour par tour",
+        "nom": "HearthStone",
+        "url": "https://playhearthstone.com/fr-fr",
+        "img": "assets/images/Pc_png_opti/HearthStone.png",
+        "img2x": "assets/images/Pc_png_2x_opti/HearthStone@2x.png"
+      },
+      {
+        "categorie": "stratégie, aventure",
+        "nom": "Warcraft III : reforged",
+        "url": "https://playwarcraft3.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/Warcraft3.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Warcraft3@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Overwatch",
+        "url": "https://playoverwatch.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/Overwatch.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Overwatch@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "World of Tanks",
+        "url": "https://worldoftanks.eu/join/8076_FR1?pub_id=wot_ong_eu_fr-be_g_s-b_acq_kw_world_of_tanks&xid_source=google&xidMedium=cpc&xid_network=g&xid_campaign_id=200968242&xid_adgroup_id=12889901202&xid_ad_id=425033366140&xid_target_id=kwd-19594335510&xid_keyword=world+of+tanks&xid_placement=&xid_device_type=c&xid_position=&xid_region=1001400&xid_position_type=-&xid_target=&xid_feeditemid=&xidMatchtype=e&xid_clickid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&url=https://worldoftanks.eu&gclid=CjwKCAjwhYOFBhBkEiwASF3KGWyITidpBxJvkj3DhOU6xQ7QiGV5w8j9JhLEm5qwQ7PiJsJxS0XKaBoCtGEQAvD_BwE&sid=SIDtbqmWlTvYTXkrP4SL_RUdclpk5AEYEaUsEn5bEpL3JFWol1v0joNFAhWF3oaUvtOXTcJGHfNpelWl3dnzPXlL49c9MB_141tOfKYV82i3M1V_XpZeDsqKX1F6I2athQ4MFsBqfCUvH-hsoFoopnuHV-ZWQ&enctid=cbeq5zukq9fl&lpsn=WOT+ACQ+WW+About+Game+AB-Test_UsersIncentives_1&foris=1",
+        "img": "assets/images/Pc_png_opti/WorldOfTanks.png",
+        "img2x": "assets/images/Pc_png_2x_opti/WorldOfTanks@2x.png"
+      },
+      {
+        "categorie": "compétitif, tour par tour, multijoueurs",
+        "nom": "Legends of Runeterra",
+        "url": "https://playruneterra.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/LegendsOfRuneterra.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LegendsOfRuneterra@2x.png"
+      },
+      {
+        "categorie": "compétitif, action",
+        "nom": "Among us",
+        "url": "https://innersloth.com/gameAmongUs.php",
+        "img": "assets/images/Pc_png_opti/Among_Us.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Among_Us@2x.png"
+      },
+      {
+        "categorie": "compététif, jeu de tir, action",
+        "nom": "Garry's Mod",
+        "url": "https://gmod.facepunch.com",
+        "img": "assets/images/Pc_png_opti/garrysMod.png",
+        "img2x": "assets/images/Pc_png_2x_opti/garrysMod@2x.png"
+      },
+      {
+        "categorie": "compététif, tour par tour, combat, action",
+        "nom": "Goodgame Empire",
+        "url": "https://empire.goodgamestudios.com",
+        "img": "assets/images/Pc_png_opti/GoodgameEmpire.png",
+        "img2x": "assets/images/Pc_png_2x_opti/GoodgameEmpire@2x.png"
+      },
+      {
+        "categorie": "jeu de rôle, aventure, multijoueurs",
+        "nom": "Les Sims 4",
+        "url": "https://www.ea.com/fr-fr/games/the-sims/the-sims-4",
+        "img": "assets/images/Pc_png_opti/LesSims4.png",
+        "img2x": "assets/images/Pc_png_2x_opti/LesSims4@2x.png"
+      },
+      {
+        "categorie": "jeu de rôle, aventure, monde ouvert, coopération, multijoueurs",
+        "nom": "World of Warcraft",
+        "url": "https://worldofwarcraft.com/fr-fr/",
+        "img": "assets/images/Pc_png_opti/WorldOfWarcraft.png",
+        "img2x": "assets/images/Pc_png_2x_opti/WorldOfWarcraft@2x.png"
+      },
+      {
+        "categorie": "jeu de rôle, aventure, monde ouvert, coopération, multijoueurs",
+        "nom": "Final Fantasy XIV online",
+        "url": "https://www.finalfantasyxiv.com/",
+        "img": "assets/images/Pc_png_opti/FinalFantasyXIVonline.png",
+        "img2x": "assets/images/Pc_png_2x_opti/FinalFantasyXIVonline@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de tir, action",
+        "nom": "Call of Duty : Black Ops Cold War",
+        "url": "https://www.callofduty.com/be/fr/blackopscoldwar",
+        "img": "assets/images/Pc_png_opti/CallOfDutyBlackOpsColdWar.png",
+        "img2x": "assets/images/Pc_png_2x_opti/CallOfDutyBlackOpsColdWar@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, combat, action",
+        "nom": "The Forest",
+        "url": "https://endnightgames.com",
+        "img": "assets/images/Pc_png_opti/TheForest.png",
+        "img2x": "assets/images/Pc_png_2x_opti/TheForest@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de tir, action",
+        "nom": "Shadow of the Tomb Raider",
+        "url": "https://tombraider.square-enix-games.com/fr",
+        "img": "assets/images/Pc_png_opti/ShadowOfTheTombRaider.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ShadowOfTheTombRaider@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, action",
+        "nom": "Rocket League",
+        "url": "https://www.rocketleague.com/fr/",
+        "img": "assets/images/Pc_png_opti/RocketLeague.png",
+        "img2x": "assets/images/Pc_png_2x_opti/RocketLeague@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, jeu de tir, action",
+        "nom": "For Honor",
+        "url": "https://www.ubisoft.com/en-gb/game/for-honor",
+        "img": "assets/images/Pc_png_opti/ForHonnor.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ForHonnor@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, action",
+        "nom": "Galactic Civilizations 3",
+        "url": "https://www.galciv3.com",
+        "img": "assets/images/Pc_png_opti/GalacticCivilizations3.png",
+        "img2x": "assets/images/Pc_png_2x_opti/GalacticCivilizations3@2x.png"
+      },
+      {
+        "categorie": "compétitif, tour par tour, stratégie",
+        "nom": "Dofus",
+        "url": "https://www.dofus.com/fr",
+        "img": "assets/images/Pc_png_opti/Dofus.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Dofus@2x.png"
+      },
+      {
+        "categorie": "compétitif, stratégie",
+        "nom": "Valorant",
+        "url": "https://playvalorant.com/en-us/",
+        "img": "assets/images/Pc_png_opti/valorant.png",
+        "img2x": "assets/images/Pc_png_2x_opti/valorant@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Minecraft",
+        "url": "https://www.minecraft.net/fr-fr",
+        "img": "assets/images/Pc_png_opti/Minecraft.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Minecraft@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Subnautica: Below Zero",
+        "url": "https://www.subnautica.com/?utm_source=google&utmMedium=paid&utm_campaign=Google_Search_Brand_General&utm_content=514312057565&gclid=CjwKCAjwhYOFBhBkEiwASF3KGZLumMq49UzAMns_-6H6HPwTSicEXEu_bofYIZU4_LA0tIiItVOqChoC5XwQAvD_BwE",
+        "img": "assets/images/Pc_png_opti/Subnautica.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Subnautica@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "ARK : Survival Evolved",
+        "url": "http://playark.com/",
+        "img": "assets/images/Pc_png_opti/ARK.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ARK@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Biped",
+        "url": "https://www.nextstudios.com/biped/index_en.html",
+        "img": "assets/images/Pc_png_opti/Biped.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Biped@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Tom Clancy's Rainbow Six Siege",
+        "url": "https://www.ubisoft.com/fr-fr/game/rainbow-six/siege",
+        "img": "assets/images/Pc_png_opti/TomClancysRainbowSixSiege.png",
+        "img2x": "assets/images/Pc_png_2x_opti/TomClancysRainbowSixSiege@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "Fortnite",
+        "url": "https://www.epicgames.com/fortnite/fr/home",
+        "img": "assets/images/Pc_png_opti/Fortnite.png",
+        "img2x": "assets/images/Pc_png_2x_opti/Fortnite@2x.png"
+      }
+    ],
+    "console": [
+      {
+        "categorie": "stratégie, aventure",
+        "nom": "It Takes Two",
+        "url": "https://www.ea.com/fr-fr/games/it-takes-two",
+        "img": "assets/images/Console_png_opti/ItTakesTwo.png",
+        "img2x": "assets/images/Console_png_2x_opti/ItTakesTwo@2x.png"
+      },
+      {
+        "categorie": "stratégie, aventure, tour par tour, monde ouvert",
+        "nom": "Pokemon bouclier",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Pokemon-Bouclier-1522110.html",
+        "img": "assets/images/Console_png_opti/PokemonBouclier.png",
+        "img2x": "assets/images/Console_png_2x_opti/PokemonBouclier@2x.png"
+      },
+      {
+        "categorie": "stratégie, aventure",
+        "nom": "Northgard",
+        "url": "https://northgard.net/",
+        "img": "assets/images/Console_png_opti/Northgard.png",
+        "img2x": "assets/images/Console_png_2x_opti/Northgard@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Rocket League",
+        "url": "https://www.rocketleague.com/fr/",
+        "img": "assets/images/Console_png_opti/RocketLeague.png",
+        "img2x": "assets/images/Console_png_2x_opti/RocketLeague@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Call of Duty : Black Ops Cold War",
+        "url": "https://www.callofduty.com/be/fr/blackopscoldwar",
+        "img": "assets/images/Console_png_opti/CallOfDutyBlackOpsColdWar.png",
+        "img2x": "assets/images/Console_png_2x_opti/CallOfDutyBlackOpsColdWar@2x.png"
+      },
+      {
+        "categorie": "compétitif, coopération, multijoueurs",
+        "nom": "Battlefield V",
+        "url": "https://www.ea.com/fr-fr/games/battlefield",
+        "img": "assets/images/Console_png_opti/BattlefieldV.png",
+        "img2x": "assets/images/Console_png_2x_opti/BattlefieldV@2x.png"
+      },
+      {
+        "categorie": "compétitif, action",
+        "nom": "Dead by Daylight",
+        "url": "https://deadbydaylight.com/fr",
+        "img": "assets/images/Console_png_opti/DeadByDaylight.png",
+        "img2x": "assets/images/Console_png_2x_opti/DeadByDaylight@2x.png"
+      },
+      {
+        "categorie": "compétitif, jeu de tir, action",
+        "nom": "Monster Hunter : World",
+        "url": "http://www.monsterhunterworld.com/fr/",
+        "img": "assets/images/Console_png_opti/MonsterHunter.png",
+        "img2x": "assets/images/Console_png_2x_opti/MonsterHunter@2x.png"
+      },
+      {
+        "categorie": "compétitif, tour par tour, jeu de tir, action",
+        "nom": "Worms W.M.D",
+        "url": "https://www.team17.com/games/worms-w-m-d/",
+        "img": "assets/images/Console_png_opti/WormsWMD.png",
+        "img2x": "assets/images/Console_png_2x_opti/WormsWMD@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de rôle, coopération, multijoueurs",
+        "nom": "Genshin Impact",
+        "url": "https://genshin.mihoyo.com/en/home",
+        "img": "assets/images/Console_png_opti/GenshinImpact.png",
+        "img2x": "assets/images/Console_png_2x_opti/GenshinImpact@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de rôle, coopération, multijoueurs",
+        "nom": "Animal Crossing : New Horizons",
+        "url": "https://www.animal-crossing.com/new-horizons/fr/",
+        "img": "assets/images/Console_png_opti/AnimalCrossing.png",
+        "img2x": "assets/images/Console_png_2x_opti/AnimalCrossing@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure, jeu de rôle, multijoueurs",
+        "nom": "Grand Theft Auto V",
+        "url": "https://www.rockstargames.com/fr/games/V",
+        "img": "assets/images/Console_png_opti/GrandTheftAutoV.png",
+        "img2x": "assets/images/Console_png_2x_opti/GrandTheftAutoV@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de tir, combat, action",
+        "nom": "Splatoon 2",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Splatoon-2-1173295.html",
+        "img": "assets/images/Console_png_opti/Splatoon2.png",
+        "img2x": "assets/images/Console_png_2x_opti/Splatoon2@2x.png"
+      },
+      {
+        "categorie": "aventure, jeu de tir, action",
+        "nom": "Resident Evil Village",
+        "url": "https://www.residentevil.com/village/fr/",
+        "img": "assets/images/Console_png_opti/ResidentEvilVillage.png",
+        "img2x": "assets/images/Console_png_2x_opti/ResidentEvilVillage@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs, combat, action",
+        "nom": "Super Smash Bros. Ultimate",
+        "url": "https://www.smashbros.com/fr_FR/",
+        "img": "assets/images/Console_png_opti/SuperSmashBrosUltimate.png",
+        "img2x": "assets/images/Console_png_2x_opti/SuperSmashBrosUltimate@2x.png"
+      },
+      {
+        "categorie": "multijoueurs, jeu de tir, action, compétition",
+        "nom": "Overwatch",
+        "url": "https://playoverwatch.com/fr-fr/",
+        "img": "assets/images/Console_png_opti/Overwatch.png",
+        "img2x": "assets/images/Console_png_2x_opti/Northgard@2x.png"
+      },
+      {
+        "categorie": "compétitif",
+        "nom": "Mario Kart 8 Deluxe",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html",
+        "img": "assets/images/Console_png_opti/MarioKart8Deluxe.png",
+        "img2x": "assets/images/Console_png_2x_opti/MarioKart8Deluxe@2x.png"
+      },
+      {
+        "categorie": "compétitif",
+        "nom": "Just Dance",
+        "url": "https://www.ubisoft.com/fr-fr/game/just-dance/2021",
+        "img": "assets/images/Console_png_opti/JustDance.png",
+        "img2x": "assets/images/Console_png_2x_opti/JustDance@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "The Legend of Zelda : Breath of the Wild",
+        "url": "https://www.nintendo.be/fr/Jeux/Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html",
+        "img": "assets/images/Console_png_opti/TheLegendOfZelda.png",
+        "img2x": "assets/images/Console_png_2x_opti/TheLegendOfZelda@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Assassin's Creed Valhalla",
+        "url": "https://www.ubisoft.com/en-us/game/assassins-creed/valhalla",
+        "img": "assets/images/Console_png_opti/AssassinCreedVAlhalla.png",
+        "img2x": "assets/images/Console_png_2x_opti/AssassinCreedVAlhalla@2x.png"
+      },
+      {
+        "categorie": "monde ouvert, aventure",
+        "nom": "Red Dead Redemption 2",
+        "url": "https://www.rockstargames.com/reddeadredemption2/",
+        "img": "assets/images/Console_png_opti/RedDeadRedemption2.png",
+        "img2x": "assets/images/Console_png_2x_opti/RedDeadRedemption2@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Cuphead",
+        "url": "http://cupheadgame.com/",
+        "img": "assets/images/Console_png_opti/Cuphead.png",
+        "img2x": "assets/images/Console_png_2x_opti/Cuphead@2x.png"
+      },
+      {
+        "categorie": "coopération, multijoueurs",
+        "nom": "Overcooked 2",
+        "url": "https://www.team17.com/games/overcooked-2/",
+        "img": "assets/images/Console_png_opti/Overcoocked2.png",
+        "img2x": "assets/images/Console_png_2x_opti/Overcoocked2@2x.png"
+      },
+      {
+        "categorie": "combat, action",
+        "nom": "Mortal Kombat 11",
+        "url": "https://www.mortalkombat.com/",
+        "img": "assets/images/Console_png_opti/MortalKomat11.png",
+        "img2x": "assets/images/Console_png_2x_opti/MortalKomat11@2x.png"
+      },
+      {
+        "categorie": "jeu de tir, action",
+        "nom": "APEX : Legends",
+        "url": "https://www.ea.com/fr-fr/games/apex-legends",
+        "img": "assets/images/Console_png_opti/ApaxLegends.png",
+        "img2x": "assets/images/Console_png_2x_opti/ApaxLegends@2x.png"
+      }
+    ]
   }
-]
+}

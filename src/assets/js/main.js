@@ -22,6 +22,7 @@ let tueur = 0;
 let profile = "";
 
 
+
 // for(let input of inputs){
 //     input.addEventListener('input', (e) =>{
 //         btnsSuivant[nSection].removeAttribute('disabled');
@@ -203,43 +204,48 @@ function wichProfile(p, a, c, t){
     return prof;
 };
 
-btnTerminer.addEventListener('click', (e) =>{
-    sections[nSection].classList.add('section--hidden');
-    sections[nSectionSuivant].classList.remove('section--hidden');
-    btnFermer.classList.add('headerListe__el--hidden');
-    btnRecommencer.classList.remove('headerListe__el--hidden');
 
-    nSection += 1;
-    nSectionSuivant = nSection + 1;
-    nSectionPrecedent = nSection - 1;
-
-    let mPerformeur = Math.round(performeur / 3);
-    let mAventurier = Math.round(aventurier / 3);
-    let mCoequipier = Math.round(coequipier / 3);
-    let mTueur = Math.round(tueur / 3);
-
-    console.log('performeur : ' + mPerformeur);
-    console.log('aventurier : ' + mAventurier);
-    console.log('coequipier : ' + mCoequipier);
-    console.log('tueur : ' + mTueur);
-
-    profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
-    console.log('RESULTAT : tu es ' + profile);
-
-    fetch('assets/json/donnees.json')
-    .then((response) =>{
-        return response.json();
-    })
-    .then((database) =>{
-        // console.log(database[0].performeur.description);
-        console.log(database);
-        
-    })
-    .catch((response) =>{
-        console.log('data non trouvée => ' + response);
-    });
+fetch('assets/json/jeux.json')
+.then((response) =>{
+    return response.json();
+})
+.then((database) =>{
+    // console.log(database[0].performeur.description);
+    console.log(database);
+    btnTerminer.addEventListener('click', (e) =>{
+        sections[nSection].classList.add('section--hidden');
+        sections[nSectionSuivant].classList.remove('section--hidden');
+        btnFermer.classList.add('headerListe__el--hidden');
+        btnRecommencer.classList.remove('headerListe__el--hidden');
     
+        nSection += 1;
+        nSectionSuivant = nSection + 1;
+        nSectionPrecedent = nSection - 1;
+    
+        let mPerformeur = Math.round(performeur / 3);
+        let mAventurier = Math.round(aventurier / 3);
+        let mCoequipier = Math.round(coequipier / 3);
+        let mTueur = Math.round(tueur / 3);
+    
+        console.log('performeur : ' + mPerformeur);
+        console.log('aventurier : ' + mAventurier);
+        console.log('coequipier : ' + mCoequipier);
+        console.log('tueur : ' + mTueur);
+    
+        profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
+        console.log('RESULTAT : tu es ' + profile);
+    
+        console.log(database.performeur);
+        console.log(database.stratège.mobile[0].img);
+        let image = document.createElement('img');
+        image.setAttribute('src', database.stratège.mobile[0].img);
+        document.querySelector('.jeux--mobile').appendChild(image);
+    });
+})
+.catch((response) =>{
+    console.log('data non trouvée => ' + response);
 });
+
 
 // pour tester rapidement :
 // let p = prompt('performeur');
