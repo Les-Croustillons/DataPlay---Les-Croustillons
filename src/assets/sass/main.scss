@@ -192,9 +192,15 @@ body p{
 // =============
 
 
-
+.jeux__el{
+    display: block;
+    cursor: pointer;
+}
+.jeuImg, .jeuNom, .jeuCategorie{
+    cursor: pointer;
+}
 // image
-.jeux img{
+.jeuImg{
     width: 165px;
     height: 165px;
 }

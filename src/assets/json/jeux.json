@@ -402,8 +402,8 @@
         "categorie": "coopération, multijoueurs, jeu de tir, action",
         "nom": "For Honor",
         "url": "https://www.ubisoft.com/en-gb/game/for-honor",
-        "img": "assets/images/Pc_png_opti/ForHonnor.png",
-        "img2x": "assets/images/Pc_png_2x_opti/ForHonnor@2x.png"
+        "img": "assets/images/Pc_png_opti/ForHonor.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ForHonor@2x.png"
       },
       {
         "categorie": "coopération, multijoueurs, action",
@@ -651,8 +651,8 @@
         "categorie": "coopération, multijoueurs",
         "nom": "Overcooked 2",
         "url": "https://www.team17.com/games/overcooked-2/",
-        "img": "assets/images/Console_png_opti/Overcoocked2.png",
-        "img2x": "assets/images/Console_png_2x_opti/Overcoocked2@2x.png"
+        "img": "assets/images/Console_png_opti/overcooked2.png",
+        "img2x": "assets/images/Console_png_2x_opti/overcooked2@2x.png"
       }
     ]
   },
@@ -717,15 +717,15 @@
         "categorie": "combat, action",
         "nom": "Mortal Kombat 11",
         "url": "https://www.mortalkombat.com/",
-        "img": "assets/images/Console_png_opti/MortalKomat11.png",
-        "img2x": "assets/images/Console_png_2x_opti/MortalKomat11@2x.png"
+        "img": "assets/images/Console_png_opti/Mortalkombat11.png",
+        "img2x": "assets/images/Console_png_2x_opti/Mortalkombat11@2x.png"
       },
       {
         "categorie": "jeu de tir, action",
         "nom": "APEX : Legends",
         "url": "https://www.ea.com/fr-fr/games/apex-legends",
-        "img": "assets/images/Console_png_opti/ApaxLegends.png",
-        "img2x": "assets/images/Console_png_2x_opti/ApaxLegends@2x.png"
+        "img": "assets/images/Console_png_opti/ApexLegends.png",
+        "img2x": "assets/images/Console_png_2x_opti/ApexLegends@2x.png"
       }
     ]
   },
@@ -1015,8 +1015,8 @@
         "categorie": "coopération, multijoueurs, jeu de tir, action",
         "nom": "For Honor",
         "url": "https://www.ubisoft.com/en-gb/game/for-honor",
-        "img": "assets/images/Pc_png_opti/ForHonnor.png",
-        "img2x": "assets/images/Pc_png_2x_opti/ForHonnor@2x.png"
+        "img": "assets/images/Pc_png_opti/ForHonor.png",
+        "img2x": "assets/images/Pc_png_2x_opti/ForHonor@2x.png"
       },
       {
         "categorie": "coopération, multijoueurs, action",
@@ -1241,22 +1241,22 @@
         "categorie": "coopération, multijoueurs",
         "nom": "Overcooked 2",
         "url": "https://www.team17.com/games/overcooked-2/",
-        "img": "assets/images/Console_png_opti/Overcoocked2.png",
-        "img2x": "assets/images/Console_png_2x_opti/Overcoocked2@2x.png"
+        "img": "assets/images/Console_png_opti/overcooked2.png",
+        "img2x": "assets/images/Console_png_2x_opti/overcooked2@2x.png"
       },
       {
         "categorie": "combat, action",
         "nom": "Mortal Kombat 11",
         "url": "https://www.mortalkombat.com/",
-        "img": "assets/images/Console_png_opti/MortalKomat11.png",
-        "img2x": "assets/images/Console_png_2x_opti/MortalKomat11@2x.png"
+        "img": "assets/images/Console_png_opti/Mortalkombat11.png",
+        "img2x": "assets/images/Console_png_2x_opti/Mortalkombat11@2x.png"
       },
       {
         "categorie": "jeu de tir, action",
         "nom": "APEX : Legends",
         "url": "https://www.ea.com/fr-fr/games/apex-legends",
-        "img": "assets/images/Console_png_opti/ApaxLegends.png",
-        "img2x": "assets/images/Console_png_2x_opti/ApaxLegends@2x.png"
+        "img": "assets/images/Console_png_opti/ApexLegends.png",
+        "img2x": "assets/images/Console_png_2x_opti/ApexLegends@2x.png"
       }
     ]
   }

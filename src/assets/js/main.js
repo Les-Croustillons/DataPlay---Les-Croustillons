@@ -14,6 +14,10 @@ let profilEl = document.querySelector('.profile');
 let descriptionEl = document.querySelector('.description');
 let categoriesEl = document.querySelector('.categories');
 
+let jeuxPc = document.querySelector('.jeux--pc');
+let jeuxConsole = document.querySelector('.jeux--console');
+let jeuxMobile = document.querySelector('.jeux--mobile');
+
 let nSection = 0;
 let nSectionSuivant = nSection + 1;
 let nSectionPrecedent = nSection - 1;
@@ -214,33 +218,81 @@ function createText(prof, datas){
     categoriesEl.innerHTML = `${datas.categoriesProfile}`;
 };
 
+function createJeuContainer(support, data){
+    let jeuContainer = document.createElement('a');
+    jeuContainer.classList.add('jeux__el');
+    jeuContainer.setAttribute('href', data.url);
+    support.appendChild(jeuContainer);
+
+    let jeuImg = document.createElement('img');
+    jeuImg.classList.add('jeuImg');
+    jeuImg.setAttribute('src', data.img);
+// ajouter img2x
+    jeuContainer.appendChild(jeuImg);
+
+    let jeuNom = document.createElement('h5');
+    jeuNom.classList.add('jeuNom');
+    jeuNom.innerHTML = `${data.nom}`;
+    jeuContainer.appendChild(jeuNom);
+
+    let jeuCategories = document.createElement('h5');
+    jeuCategories.classList.add('jeuCategorie');
+    jeuCategories.innerHTML = `${data.categorie}`;
+    jeuContainer.appendChild(jeuCategories);
+};
+
+function createGame(datas){
+    for(let data of datas.console){
+        createJeuContainer(jeuxConsole, data);
+    };
+    for(let data of datas.mobile){
+        createJeuContainer(jeuxMobile, data);
+    };
+    for(let data of datas.pc){
+        createJeuContainer(jeuxPc, data);
+    };
+};
+
 function selectionData(datas, prof){
     if(prof == "l'indécis"){
         createText(prof, datas.extreme.indecis);
+        createGame(datas.extreme);
     }else if(prof == "le faux gamer"){
         createText(prof, datas.extreme.fauxGamer);
+        createGame(datas.extreme);
     }else if(prof == "le polyvalent"){
         createText(prof, datas.extreme.polyvalent);
+        createGame(datas.extreme);
     }else if(prof == "le mercenaire"){
         createText(prof, datas.mercenaire);
+        createGame(datas.mercenaire);
     }else if(prof == "le leader"){
         createText(prof, datas.leader);
+        createGame(datas.leader);
     }else if(prof == "le traqueur"){
         createText(prof, datas.traqueur);
+        createGame(datas.traqueur);
     }else if(prof == "le rôliste"){
         createText(prof, datas.roliste);
+        createGame(datas.roliste);
     }else if(prof == "le stratège"){
         createText(prof, datas.stratege);
+        createGame(datas.stratege);
     }else if(prof == "le boss"){
         createText(prof, datas.boss);
+        createGame(datas.boss);
     }else if(prof == "le performeur"){
         createText(prof, datas.performeur);
+        createGame(datas.performeur);
     }else if(prof == "l'aventurier"){
         createText(prof, datas.aventurier);
+        createGame(datas.aventurier);
     }else if(prof == "le coéquipier"){
         createText(prof, datas.coequipier);
+        createGame(datas.coequipier);
     }else if(prof == "le tueur"){
         createText(prof, datas.tueur);
+        createGame(datas.tueur);
     }
 };
 
