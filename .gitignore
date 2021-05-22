@@ -3,3 +3,4 @@ package-lock.json
 dist/*
 *.css.map
 *.js.map
+main.scss
