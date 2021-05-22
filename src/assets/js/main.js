@@ -218,16 +218,22 @@ function createText(prof, datas){
     categoriesEl.innerHTML = `${datas.categoriesProfile}`;
 };
 
-function createJeuContainer(support, data){
+function createJeuContainer(support, data, plateforme){
     let jeuContainer = document.createElement('a');
     jeuContainer.classList.add('jeux__el');
     jeuContainer.setAttribute('href', data.url);
+    jeuContainer.setAttribute('target', '_blank');
     support.appendChild(jeuContainer);
 
     let jeuImg = document.createElement('img');
     jeuImg.classList.add('jeuImg');
+    jeuImg.setAttribute('srcset', `${data.img}, ${data.img2x} 2x`);
     jeuImg.setAttribute('src', data.img);
-// ajouter img2x
+    if(plateforme == "mobile"){
+        jeuImg.setAttribute('alt', `Icône du jeu ${data.nom}`)
+    }else{
+        jeuImg.setAttribute('alt', `Affiche du jeu ${data.nom}`);
+    }
     jeuContainer.appendChild(jeuImg);
 
     let jeuNom = document.createElement('h5');
@@ -243,13 +249,13 @@ function createJeuContainer(support, data){
 
 function createGame(datas){
     for(let data of datas.console){
-        createJeuContainer(jeuxConsole, data);
+        createJeuContainer(jeuxConsole, data, "console");
     };
     for(let data of datas.mobile){
-        createJeuContainer(jeuxMobile, data);
+        createJeuContainer(jeuxMobile, data, "mobile");
     };
     for(let data of datas.pc){
-        createJeuContainer(jeuxPc, data);
+        createJeuContainer(jeuxPc, data, "pc");
     };
 };
 
@@ -301,7 +307,6 @@ fetch('assets/json/jeux.json')
     return response.json();
 })
 .then((database) =>{
-    // console.log(database[0].performeur.description);
     console.log(database);
     btnTerminer.addEventListener('click', (e) =>{
         sections[nSection].classList.add('section--hidden');
@@ -325,12 +330,6 @@ fetch('assets/json/jeux.json')
     
         profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
         console.log('RESULTAT : tu es ' + profile);
-    
-        // console.log(database.performeur);
-        // console.log(database.stratège.mobile[0].img);
-        // let image = document.createElement('img');
-        // image.setAttribute('src', database.stratège.mobile[0].img);
-        // document.querySelector('.jeux--mobile').appendChild(image);
 
         selectionData(database, profile);
     });
