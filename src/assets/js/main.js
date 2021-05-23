@@ -30,13 +30,6 @@ let tueur = 0;
 let profile = "";
 
 
-
-// for(let input of inputs){
-//     input.addEventListener('input', (e) =>{
-//         btnsSuivant[nSection].removeAttribute('disabled');
-//     });
-// };
-
 for(let btnSuivant of btnsSuivant){
     btnSuivant.addEventListener('click', (e) =>{
         sections[nSection].classList.add('section--hidden');
@@ -238,12 +231,12 @@ function createJeuContainer(support, data, plateforme){
 
     let jeuNom = document.createElement('h5');
     jeuNom.classList.add('jeuNom');
-    jeuNom.innerHTML = `${data.nom}`;
+    jeuNom.innerHTML = `Jeu : ${data.nom}`;
     jeuContainer.appendChild(jeuNom);
 
     let jeuCategories = document.createElement('h5');
     jeuCategories.classList.add('jeuCategorie');
-    jeuCategories.innerHTML = `${data.categorie}`;
+    jeuCategories.innerHTML = `Type : ${data.categorie}`;
     jeuContainer.appendChild(jeuCategories);
 };
 
