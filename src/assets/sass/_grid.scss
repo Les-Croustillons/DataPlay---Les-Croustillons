@@ -2,3 +2,98 @@
  * GRILLES CSS
 ** =============================================================== */
 
+
+
+.footerElements{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    padding: 50px 25px 40px 25px;
+    gap: 16px;
+}
+
+.footerListe__el--credits{
+    margin:0px;
+}
+
+
+@media (min-width: 700px){
+    .footerElements{
+        padding: 50px 40px 40px 40px;;
+    }
+}
+
+@media (min-width:1025px) {
+    .section--header{
+        display:grid;
+        grid-template-columns: 0.9fr 500px;
+        grid-template-rows:40px 350px 120px;
+    }
+
+    .section--header .illu{
+        grid-column-start: 2;
+        grid-row-start:2;
+    } 
+
+    .titre--grand + p{
+        width:400px;
+    }
+
+    .section--fonctionnalites{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        margin-top: 80px;
+    }
+
+    .grid--start1{
+        grid-column-start:1;
+    }
+
+    .grid--start2{
+        grid-column-start:2;
+    }
+
+    .bloc--grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        margin-bottom: 80px;
+    }
+
+    .section--nathalie{
+        margin-top: 80px;
+    }
+
+    .bloc--aurelie .section--aurelie {
+        grid-row-start:1;
+    }
+
+    
+    .bloc--cedric .section--cedric {
+        grid-row-start:1;
+    }
+
+    .section--francois{
+        margin-top: 60px;
+    }
+
+    .section--cedric{
+        margin-top: 40px;
+    }
+
+    .bloc--jeux{
+        margin: 0px auto;
+    }
+
+    .bloc--quiz{
+        margin: 0px auto;
+    }
+
+}
+
+@media (min-width: 1400px){
+    .section--header{
+        display:grid;
+        grid-template-columns: 0.5fr 500px;
+        grid-template-rows:40px 350px 120px;
+    }
+}

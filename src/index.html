@@ -4,84 +4,140 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Geeky - Projet DATA PLAY</title>
+	<title>GEEKY - Projet DataPlay</title>
 	<link href="assets/css/main.css" rel="stylesheet" >
 
 	<!-- Google -->
-	<meta name="title" content=" - DATA PLAY">
-	<meta name="description" content="Heaj - DWM - DATA PLAY - ">
+	<meta name="title" content="Les Croustillons - DWM - DATA PLAY - HEAJ">
+	<meta name="description" content="Atelier DataPlay, projet sur le genre de gamer.">
+
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@publisher_handle">
 	<meta name="twitter:creator" content="@author_handle">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="Heaj - DWM - DATA PLAY - ">
+	<meta name="twitter:title" content="Les Croustillons - DWM - DATA PLAY - HEAJ">
+	<meta name="twitter:description" content="Atelier DataPlay, projet sur le genre de gamer.">
+
 	<!-- Twitter summary card with large image must be at least 280x150px -->
-	<meta name="twitter:image" content="https://francois-szczepkowski.be/projets/">
+	<meta name="twitter:image" content="assets/images/meta.png">
+
 	<!-- Open Graph data -->
 	<meta property ="og:site_name" content=" / DATA PLAY"/>
-	<meta property ="og:title" content="RUX - "/>
-	<meta property ="og:description" content="Accueil -  - DATA PLAY - DWM"/>
+	<meta property ="og:title" content="Les Croustillons - DWM - DATA PLAY - HEAJ"/>
+	<meta property ="og:description" content="Atelier DataPlay, projet sur le genre de gamer."/>
 	<meta property ="og:type" content="website"/>
-	<meta property ="og:url" content="https://francois-szczepkowski.be/projets/" />
-	<meta property ="og:image" content="https://francois-szczepkowski.be/projets/" />
+	<meta property ="og:url" content="https://francois-szczepkowski.be/projets/dataplay/" />
+	<meta property ="og:image" content="assets/images/meta.png" />
 	<meta property ="og:image:width" content="1800">
 	<meta property ="og:image:height" content="945">
 			
-	<link rel="icon" href="assets/images/"/>
+	<link rel="icon" href="assets/images/logo-favicon.png"/>
+	<script src="assets/js/main.min.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-	<!-- classes au header, main, footer ? -->
-	<header class="header">
-		<h1 class="logo">Geeky</h1>
-	</header>
 
 	<main class="main">
-		<h2 class="titre">Quel genre de gamer es-tu?</h2>
-		<p>Es-tu plutôt un aventurier ? Un mercenaire ?</p>
-		<p>Pour le savoir, viens faire le test maintenant !</p>
-		<div class="btnContainer">
-			<a href="questionnaire.html" class="btnContainer__el btnContainer__el--play">Play</a>
-			<div class="btnContainer__el btnContainer__el--epaisseur"></div>
-		</div>
-		<div class="illu"></div>
 
-		<!-- en grille ? -->
-		<div class="etoile"></div>
-		<p>Grâce à ce questionnaire, tu pourras confirmer ou non ton status de rageux professionnel ou trouver enfin des jeux qui te conviennent.</p>
-		<div class="champignon"></div>
-		<p><span class="caps">Geeky</span> est un site réalisé lors de l'atelier DataPlay lors de nos études en Design Web et Mobile de la Haute École Albert Jacquard.</p>
+		<section class="section--header">
+			<h1 class="titre"><a href="index.html"><img class="logo" src="assets/images/logo.svg"></a><span class="text--indent">Geeky</span></h1>
+				<h2 class="titre titre--Tgrand grid--start1">Quel genre de gamer es-tu?</h2>
+				<p class="grid--start1">Es-tu plutôt un aventurier ? Un mercenaire ? Pour le savoir, viens faire le test maintenant !</p>
+				<div class="btnContainer grid--start1">
+					<a href="questionnaire.html" class="btnContainer__el btnContainer__el--play"><span>Play</span></a>
+					<div class="btnContainer__el btnContainer__el--epaisseur"></div>
+				</div>
+				<div class="illu"></div>
+				
+				<div class="fleche--position">
+					<a href="#anchor"><div class="fleche"></div></a>
+				</div>
+		</section>
 
-		<h3 class="titre titre--grand">La team</h3>
-		
-		<!-- ajouter les textes de profils -->
+		<section class="section--fonctionnalites">	
 
-		<div class="picto picto--nathalie"></div>
-		<h4 class="titre titre--moyen">Nathalie</h4>
-		<p>texte Nathalie</p>
+			<div class="bloc--quiz">	
+				<div class="picto bloc grid--start1" id="anchor"></div>
+				<h3 class="titre titre--grand grid--start1">Un quiz</h3>
+				<p class="grid--start1">Qui pourra confirmer ou non ton statut de rageux professionnel ou trouver enfin des jeux qui te conviennent.</p>
+			</div>
 
-		<div class="picto picto--aurelie"></div>
-		<h4 class="titre titre--moyen">Aurélie</h4>
-		<p>texte Aurélie</p>
+			<div class="bloc--jeux">
+				<div class="picto champignon grid--start2"></div>
+				<h3 class="titre titre--grand grid--start2">Des jeux adaptés</h3>
+				<p class="grid--start2">Une fois ton questionnaire validé, un profil t’es assigné et des jeux correspondants te seront proposés.</p>
+			</div>
 
-		<div class="picto picto--francois"></div>
-		<h4 class="titre titre--moyen">François</h4>
-		<p>texte François</p>
+		</section>
 
-		<div class="picto picto--cedric"></div>
-		<h4 class="titre titre--moyen">Cédric</h4>
-		<p>texte Cédric</p>
+			<p class="paragraphe--large"><span class="caps">Geeky</span> est un site réalisé lors de l’atelier DataPlay. Après avoir répondu à quelques questions simples, tu sauras si tu es un rageux ou pas et quels jeux t’empêcheront (peut-être)
+				de casser ton écran.</p>
+
+			<h3 class="titre titre--grand">La team</h3>
+
+		<section class="section--team">
+
+			<section class="bloc--nathalie bloc--grid">
+				<div class="picto picto--nathalie grid--start1"></div>
+
+				<div class="section--nathalie grid--start2">
+					<h4 class="titre titre--moyen">Nathalie <span>aka la rôliste</span></h4>
+					<p class="grid--start2">Comme le nuage de Lakitu, Nathalie est le soutien, elle est toujours là pour soutenir les autres. En tant que grande fan de World of Warcraft, elle est également la maman du groupe.
+						Nathalie est toute gentille et toute mignonne, elle ne veut le mal de personne et fait tout pour garder la bonne entente du groupe. Elle s’inquiète facilement mais ne s’énèrve presque jamais.</p>
+					</div>
+			</section>
+
+			<section class="bloc--aurelie bloc--grid">
+				<div class="picto picto--aurelie grid--start2"></div>
+
+				<div class="section--aurelie grid--start1">
+					<h4 class="titre titre--moyen">Aurélie <span>aka la mercenaire</span></h4>
+					<p>Aurélie partage une caractéristique commune avec Yoshi, elle aime manger et ressemble a un petit dinosaure.  Elle se prend souvent au sérieux contrairement à son personnage, mais elle adore aider les autres.
+						Elle joue peu mais quelques fois, elle a besoin de se défouler en faisant tout et n’importe quoi sur GTA.</p>
+					</div>
+			</section>
+
+
+			<section class="bloc--francois bloc--grid">
+				<div class="picto picto--francois grid--start1"></div>
+
+				<div class="section--francois grid--start2">
+					<h4 class="titre titre--moyen">François <span>aka le traqueur</span></h4>
+					<p>Voici un grand amateur de League of Legends depuis son plus jeune âge.  Tout comme Waluigi, François  est comique et vantard sur les bords. Il est églament mesquin et ne s’entend pas toujours avec tout le monde.</p>
+				</div>
+			</section>
+
+			<section class="bloc--cedric bloc--grid">
+				<div class="picto picto--cedric grid--start2"></div>
+
+				<div class="section--cedric grid--start1">
+					<h4 class="titre titre--moyen">Cédric <span>aka le stratège</span></h4>
+					<p>Tout comme Bob-Omb, Cédric est quelqu’un de timide et réservé mais il ne faut pas l’énerver non plus... Il est également intelligent et reste un fan de stratégie, ce n’est pas pour rien que son jeu préféré est Dofus.
+						Il sait également montrer son courage mais n’aime pas se mettre en avant.</p>
+					</div>
+			</section>
+
+		</section>
+
+
 	</main>
 
 	<div class="flecheDroite"></div>
 	
 	<footer class="footer">
-		<ul class="footerListe">
-			<!-- quel lien pour le heaj ? -->
-			<li class="footerListe__el"><a href="#">crédits</a></li>
-			<li class="footerListe__el">Les croustillons &copy;2021</li>
-			<li class="footerListe__el footer__el--dwm"><a href="http://dwm.re/">DWM</a></li>
-		</ul>
+
+		<div class="footerElements">
+			<ul class="footerListe">
+				<li class="footerListe__el"><a href="https://www.heaj.be/fr/">HEAJ</a></li>
+				<li class="footerListe__el"><small>Les Croustillons &copy;<span id="annee">2021</span></small></li>
+				<li class="footerListe__el footer__el--dwm"><a href="http://dwm.re/"><img src="assets/images/logo-DWM-dark.svg" class="logo--dwm"></a></li>
+			</ul>
+
+			<p class="footerListe__el footerListe__el--credits"><a href="credits.html"><span class="caps">Crédits</span></a>
+		</div>
 	</footer>
 </body>
 </html>
