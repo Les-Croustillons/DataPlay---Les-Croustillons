@@ -554,11 +554,26 @@ body p{
     display: none;
 }
 
-.btn--hidden, .headerListe__el--hidden{
+.headerListe__el--hidden{
     display: none;
 }
 
-
+// jeux
+.jeux__el{
+    display: block;
+    cursor: pointer;
+}
+.jeuImg, .jeuNom, .jeuCategorie{
+    cursor: pointer;
+}
+// image
+.jeuImg{
+    width: 165px;
+    height: 165px;
+}
+.headerListe__el--hidden{
+    display: none;
+}
 
 
 
