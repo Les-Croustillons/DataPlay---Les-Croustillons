@@ -10,6 +10,14 @@ let btnFermer = document.querySelector('.headerListe__el--fermer');
 let btnRecommencer = document.querySelector('.headerListe__el--recommencer');
 let btnTerminer = document.querySelector('.btnTerminer');
 
+let profilEl = document.querySelector('.profile');
+let descriptionEl = document.querySelector('.description');
+let categoriesEl = document.querySelector('.categories');
+
+let jeuxPc = document.querySelector('.jeux--pc');
+let jeuxConsole = document.querySelector('.jeux--console');
+let jeuxMobile = document.querySelector('.jeux--mobile');
+
 let nSection = 0;
 let nSectionSuivant = nSection + 1;
 let nSectionPrecedent = nSection - 1;
@@ -21,13 +29,6 @@ let tueur = 0;
 
 let profile = "";
 
-
-
-// for(let input of inputs){
-//     input.addEventListener('input', (e) =>{
-//         btnsSuivant[nSection].removeAttribute('disabled');
-//     });
-// };
 
 for(let btnSuivant of btnsSuivant){
     btnSuivant.addEventListener('click', (e) =>{
@@ -204,13 +205,101 @@ function wichProfile(p, a, c, t){
     return prof;
 };
 
+function createText(prof, datas){
+    profilEl.innerHTML = prof;
+    descriptionEl.innerHTML = `${datas.description}`;
+    categoriesEl.innerHTML = `${datas.categoriesProfile}`;
+};
+
+function createJeuContainer(support, data, plateforme){
+    let jeuContainer = document.createElement('a');
+    jeuContainer.classList.add('jeux__el');
+    jeuContainer.setAttribute('href', data.url);
+    jeuContainer.setAttribute('target', '_blank');
+    support.appendChild(jeuContainer);
+
+    let jeuImg = document.createElement('img');
+    jeuImg.classList.add('jeuImg');
+    jeuImg.setAttribute('srcset', `${data.img}, ${data.img2x} 2x`);
+    jeuImg.setAttribute('src', data.img);
+    if(plateforme == "mobile"){
+        jeuImg.setAttribute('alt', `Icône du jeu ${data.nom}`)
+    }else{
+        jeuImg.setAttribute('alt', `Affiche du jeu ${data.nom}`);
+    }
+    jeuContainer.appendChild(jeuImg);
+
+    let jeuNom = document.createElement('h5');
+    jeuNom.classList.add('jeuNom');
+    jeuNom.innerHTML = `Jeu : ${data.nom}`;
+    jeuContainer.appendChild(jeuNom);
+
+    let jeuCategories = document.createElement('h5');
+    jeuCategories.classList.add('jeuCategorie');
+    jeuCategories.innerHTML = `Type : ${data.categorie}`;
+    jeuContainer.appendChild(jeuCategories);
+};
+
+function createGame(datas){
+    for(let data of datas.console){
+        createJeuContainer(jeuxConsole, data, "console");
+    };
+    for(let data of datas.mobile){
+        createJeuContainer(jeuxMobile, data, "mobile");
+    };
+    for(let data of datas.pc){
+        createJeuContainer(jeuxPc, data, "pc");
+    };
+};
+
+function selectionData(datas, prof){
+    if(prof == "l'indécis"){
+        createText(prof, datas.extreme.indecis);
+        createGame(datas.extreme);
+    }else if(prof == "le faux gamer"){
+        createText(prof, datas.extreme.fauxGamer);
+        createGame(datas.extreme);
+    }else if(prof == "le polyvalent"){
+        createText(prof, datas.extreme.polyvalent);
+        createGame(datas.extreme);
+    }else if(prof == "le mercenaire"){
+        createText(prof, datas.mercenaire);
+        createGame(datas.mercenaire);
+    }else if(prof == "le leader"){
+        createText(prof, datas.leader);
+        createGame(datas.leader);
+    }else if(prof == "le traqueur"){
+        createText(prof, datas.traqueur);
+        createGame(datas.traqueur);
+    }else if(prof == "le rôliste"){
+        createText(prof, datas.roliste);
+        createGame(datas.roliste);
+    }else if(prof == "le stratège"){
+        createText(prof, datas.stratege);
+        createGame(datas.stratege);
+    }else if(prof == "le boss"){
+        createText(prof, datas.boss);
+        createGame(datas.boss);
+    }else if(prof == "le performeur"){
+        createText(prof, datas.performeur);
+        createGame(datas.performeur);
+    }else if(prof == "l'aventurier"){
+        createText(prof, datas.aventurier);
+        createGame(datas.aventurier);
+    }else if(prof == "le coéquipier"){
+        createText(prof, datas.coequipier);
+        createGame(datas.coequipier);
+    }else if(prof == "le tueur"){
+        createText(prof, datas.tueur);
+        createGame(datas.tueur);
+    }
+};
 
 fetch('assets/json/jeux.json')
 .then((response) =>{
     return response.json();
 })
 .then((database) =>{
-    // console.log(database[0].performeur.description);
     console.log(database);
     btnTerminer.addEventListener('click', (e) =>{
         sections[nSection].classList.add('section--hidden');
@@ -234,12 +323,8 @@ fetch('assets/json/jeux.json')
     
         profile = wichProfile(mPerformeur, mAventurier, mCoequipier, mTueur);
         console.log('RESULTAT : tu es ' + profile);
-    
-        console.log(database.performeur);
-        console.log(database.stratège.mobile[0].img);
-        let image = document.createElement('img');
-        image.setAttribute('src', database.stratège.mobile[0].img);
-        document.querySelector('.jeux--mobile').appendChild(image);
+
+        selectionData(database, profile);
     });
 })
 .catch((response) =>{
