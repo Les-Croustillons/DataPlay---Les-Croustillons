@@ -231,12 +231,12 @@ function createJeuContainer(support, data, plateforme){
 
     let jeuNom = document.createElement('h5');
     jeuNom.classList.add('jeuNom');
-    jeuNom.innerHTML = `Jeu : ${data.nom}`;
+    jeuNom.innerHTML = `${data.nom}`;
     jeuContainer.appendChild(jeuNom);
 
     let jeuCategories = document.createElement('h5');
     jeuCategories.classList.add('jeuCategorie');
-    jeuCategories.innerHTML = `Type : ${data.categorie}`;
+    jeuCategories.innerHTML = `${data.categorie}`;
     jeuContainer.appendChild(jeuCategories);
 };
 
